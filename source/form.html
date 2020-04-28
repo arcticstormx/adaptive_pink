@@ -8,7 +8,8 @@
     <header class="page-header">
       <nav class="page-nav">
         <a class="page-nav__logo" href="">Pink</a>
-        <button class="page-nav__close"></button>
+        <button type="button" class="page-nav__close"></button>
+        <button type="button" class="page-nav__open"></button>
         <ul class="page-nav__list">
           <li class="page-nav__list-item">Главная</li>
           <li class="page-nav__list-item">Фотографии</li>
@@ -18,16 +19,18 @@
       </nav>
     </header>
     <main>
-      <section class="main-form">
-        <h1 class="main-form__header">
+      <div class="page-title">
+        <h1 class="page-tile__title">
           Конкурс на самое безбашенное путешествие с Пинк
         </h1>
-        <p class="main-form__header-small">
+        <p class="page-title__subtitle">
           Поделитесь своей историей и получите
           шанс выиграть ценный приз — 1000
           миль на вашу бонусную карту!
         </p>
-        <form class="main-form__form form" action="" method="post">
+      </div>
+      <section class="main-form">
+        <form class="main-form__form form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fieldset">
             <label class="form__label">
               Фамилия:
