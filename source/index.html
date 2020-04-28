@@ -32,7 +32,9 @@
             <a class="platforms__link"></a>
           </li>
         </ul>
-        <span class="promo__small"></span>
+        <p class="promo__small">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
       </section>
       <section class="app-description">
         <div class="app-description__hook hook">
@@ -45,24 +47,43 @@
         </div>
         <ul class="app-description__features features">
           <li class="features__item">
-            <h3 class="features__item-title"></h3>
-            <p class="features__item-text"></p>
+            <h3 class="small-header features__item-title">Поднимает настроение</h3>
+            <p class="basic-text features__item-text">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
           </li>
           <li class="features__item">
-            <h3 class="features__item-title"></h3>
-            <p class="features__item-text"></p>
+            <h3 class="small-header features__item-title">
+              Меняет мир вокруг
+            </h3>
+            <p class="basic-text features__item-text">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
           </li>
           <li class="features__item">
-            <h3 class="features__item-title"></h3>
-            <p class="features__item-text"></p>
+            <h3 class="small-header features__item-title">Заводит новых друзей</h3>
+            <p class="basic-text features__item-text">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
           </li>
         </ul>
       </section>
       <section class="testimonies">
         <ul class="testimonies__slider slider">
-          <li class="slider__slide"></li>
-          <li class="slider__slide"></li>
-          <li class="slider__slide"></li>
+          <li class="slider__slide">
+            <h3 class="slider__slide-header">Николай Петров</h3>
+            <p class="slider__slide-text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </li>
+          <li class="slider__slide">
+            <h3 class="slider__slide-header"></h3>
+            <p class="slider__slide-text"></p>
+          </li>
+          <li class="slider__slide">
+            <h3 class="slider__slide-header"></h3>
+            <p class="slider__slide-text"></p>
+          </li>
         </ul>
         <ul class="testimonies__slider-controls controls">
           <li class="controls__item">
@@ -78,9 +99,78 @@
       </section>
       <section class="packages">
         <ul class="packages__slider slider">
-          <li class="slider__slide"></li>
-          <li class="slider__slide"></li>
-          <li class="slider__slide"></li>
+          <li class="slider__slide">
+            <table class="slider__table price-table">
+              <caption>Прайс на тариф "База"</caption>
+              <thead class="price-table__thead">
+                <tr class="price-table__row">
+                  <th class="price-table__head">
+                    <span class="price-table__name">База</span>
+                    <span class="price-table__price">1,99 USD</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="price-table__body">
+                <tr class="price-table__row">
+                  <td class="price-table__tdata">Розовый фильтр</td>
+                </tr>
+                <tr class="price-table__row">
+                  <td class="price-table__tdata">Смайлики</td>
+                </tr>
+                <tr class="price-table__row">
+                  <td class="price-table__tdata">Комментарии</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li class="slider__slide">
+            <table class="slider__table price-table hit-flag">
+              <caption>Прайс на тариф "Стандарт"</caption>
+              <thead class="price-table__thead">
+                <tr class="price-table__row">
+                  <th class="price-table__head">
+                    <span class="price-table__name">Стандарт</span>
+                    <span class="price-table__price">3,99 USD</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="price-table__body">
+                <tr class="price-table__row">
+                  <td class="price-table__tdata">Розовый фильтр</td>
+                </tr>
+                <tr class="price-table__row">
+                  <td class="price-table__tdata">Смайлики</td>
+                </tr>
+                <tr class="price-table__row">
+                  <td class="price-table__tdata">Комментарии</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li class="slider__slide">
+            <table class="slider__table price-table">
+              <caption>Прайс на тариф "Анлим"</caption>
+              <thead class="price-table__thead">
+                <tr class="price-table__row">
+                  <th class="price-table__head">
+                    <span class="price-table__name">Анлим</span>
+                    <span class="price-table__price">9,99 USD</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="price-table__body">
+                <tr class="price-table__row">
+                  <td class="price-table__tdata">Розовый фильтр</td>
+                </tr>
+                <tr class="price-table__row">
+                  <td class="price-table__tdata">Смайлики</td>
+                </tr>
+                <tr class="price-table__row">
+                  <td class="price-table__tdata">Комментарии</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
         </ul>
         <ul class="packages__slider-controls controls">
           <li class="controls__item">
@@ -101,18 +191,24 @@
           Остались вопросы?
           Свяжитесь с нами!
         </p>
-        <address class="contacts__address">
+        <address class="contacts__container">
           <div class="contacts__item">
             <span class="contacts__item-name">Звоните:</span>
-            <a href="" class="contacts__tel"></a>
+            <a href="tel:+78125556666" class="contacts__tel">
+            +7 (812) 555-66-66
+            </a>
           </div>
           <div class="contacts__item">
             <span class="contacts__item-name">Звоните:</span>
-            <a href="" class="contacts__email"></a>
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__email">
+              mail@htmlacademy.ru
+            </a>
           </div>
           <div class="contacts__item">
             <span class="contacts__item-name">Звоните:</span>
-            <a href="" class="contacts__address"></a>
+            <p class="contacts__address">
+              ул. Большая Конюшенная, 19/8
+            </p>
           </div>
         </address>
         <div class="contacts__map"></div>
