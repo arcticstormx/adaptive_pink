@@ -480,4 +480,259 @@ a {
   background-size: 100%;
   background-repeat: no-repeat; }
 
+.page-title {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat; }
+
+.page-title--form {
+  padding: 96px 20px 55px;
+  margin-bottom: 45px; }
+
+.page-title__title {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  font-weight: 300; }
+
+.main-form__intro {
+  margin-bottom: 35px;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+  text-align: center; }
+
+.text-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 18px; }
+
+.text-item__label {
+  padding-left: 22px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #d22856;
+  text-transform: uppercase; }
+
+.text-item__label--textarea {
+  padding-left: 0;
+  margin-bottom: 10px;
+  text-align: center; }
+
+.text-item__input {
+  padding: 14.5px 20px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: inherit;
+  color: #283645;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px; }
+
+.text-item__input::-webkit-input-placeholder {
+  color: #283645;
+  font-family: inherit; }
+
+.text-item__input::-moz-placeholder {
+  color: #283645;
+  font-family: inherit; }
+
+.text-item__input:-ms-input-placeholder {
+  color: #283645;
+  font-family: inherit; }
+
+.text-item__input::-ms-input-placeholder {
+  color: #283645;
+  font-family: inherit; }
+
+.text-item__input::placeholder {
+  color: #283645;
+  font-family: inherit; }
+
+.text-item__textarea {
+  width: 280px;
+  height: 201px;
+  resize: none; }
+
+.checkbox-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.checkbox-item__label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 70px;
+  margin-bottom: 43px;
+  height: 39px;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: none;
+  color: #283645; }
+
+.checkbox-item__label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 39px;
+  height: 39px;
+  background-color: #fff;
+  border: 2px solid #e5e5e5; }
+
+.checkbox-item__input:checked + .checkbox-item__label::after {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/red-tick.svg");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.radio-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.radio-item__label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 70px;
+  margin-bottom: 36px;
+  height: 39px;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: none;
+  color: #283645; }
+
+.radio-item__label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 39px;
+  height: 39px;
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%; }
+
+.radio-item__input:checked + .radio-item__label::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  background-color: #d22856;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%; }
+
+.form__fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0 20px;
+  border: none; }
+
+.form__section-name {
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #d22856;
+  text-align: center;
+  text-transform: uppercase; }
+
+.form__identity {
+  margin-bottom: 24px; }
+
+.form__achievements {
+  padding-top: 38px;
+  background-color: #f2f2f2; }
+
+.form__achievements .form__section-name {
+  margin-bottom: 40px; }
+
+.form__contacts {
+  padding-top: 32px;
+  padding-bottom: 23px; }
+
+.form__platforms {
+  padding-top: 39px;
+  background-color: #f2f2f2; }
+
+.form__platforms .form__section-name {
+  margin-bottom: 36px; }
+
+.form__review {
+  padding-top: 38px;
+  margin-bottom: 30px; }
+
+.form__submit-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px; }
+
+.form__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 42px;
+  width: 100%;
+  height: 63px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  background-color: #2aab6d;
+  border-radius: 2px; }
+
+.form__small {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  color: #283645;
+  text-transform: uppercase; }
+
+.form__small-asterisk {
+  color: #d22856; }
+
 /*# sourceMappingURL=style.css.map */
