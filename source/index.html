@@ -3,42 +3,58 @@
   <head>
     <meta charset="UTF-8">
     <title>Главная</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
+      <div class="navbar">
+        <a class="logo navbar__logo" href="">Pink</a>
+        <button type="button" class="navbar__burger"></button>
+      </div>
       <nav class="page-nav">
-        <a class="page-nav__logo" href="">Pink</a>
-        <button type="button" class="page-nav__close"></button>
-        <button type="button" class="page-nav__open"></button>
         <ul class="page-nav__list">
-          <li class="page-nav__list-item">Главная</li>
-          <li class="page-nav__list-item">Фотографии</li>
-          <li class="page-nav__list-item">Конкурс</li>
-          <li class="page-nav__list-item">Html academy</li>
+          <li class="page-nav__list-item page-nav__list-item--header">
+            <a class="logo page-nav__list-logo" href="">Pink</a>
+            <button type="button" class="page-nav__close"></button>
+          </li>
+          <li class="page-nav__list-item">
+            <a class="page-nav__item-link" href="">Главная</a>
+          </li>
+          <li class="page-nav__list-item">
+            <a class="page-nav__item-link" href="">Фотографии</a>
+          </li>
+          <li class="page-nav__list-item">
+            <a class="page-nav__item-link" href="">Конкурс</a>
+          </li>
+          <li class="page-nav__list-item">
+            <a class="page-nav__item-link" href="">Html academy</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="promo">
-        <div class="promo__picture"></div>
-        <a href="" class="promo__download-btn">Скачать приложение</a>
-        <ul class="promo__platforms platforms">
-          <li class="platforms__item">
-            <a class="platforms__link"></a>
-          </li>
-          <li class="platforms__item">
-            <a class="platforms__link"></a>
-          </li>
-          <li class="platforms__item">
-            <a class="platforms__link"></a>
-          </li>
-        </ul>
-        <p class="promo__small">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+        <!-- <div class="promo__picture"></div> -->
+        <div class="promo__container">
+          <a href="" class="promo__download-btn">Скачать приложение</a>
+          <ul class=" platforms">
+            <li class="platforms__item">
+              <a class="platforms__link"></a>
+            </li>
+            <li class="platforms__item">
+              <a class="platforms__link"></a>
+            </li>
+            <li class="platforms__item">
+              <a class="platforms__link"></a>
+            </li>
+          </ul>
+          <p class="promo__small">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
       </section>
       <section class="app-description">
-        <div class="app-description__hook hook">
+        <div class="hook">
           <p class="hook__text">
             Устали от серости мегаполиса?
           </p>
@@ -69,145 +85,150 @@
           </li>
         </ul>
       </section>
-      <section class="testimonies">
-        <ul class="testimonies__slider slider">
-          <li class="slider__slide">
-            <h3 class="slider__slide-header">Николай Петров</h3>
-            <p class="slider__slide-text">
+      <section class="reviews">
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <h3 class="small-header reviews__item-header">Николай Петров</h3>
+            <p class="reviews__item-text">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
           </li>
-          <li class="slider__slide">
-            <h3 class="slider__slide-header"></h3>
-            <p class="slider__slide-text"></p>
+          <li class="reviews__item">
+            <h3 class="reviews__item-header"></h3>
+            <p class="reviews__item-text"></p>
           </li>
-          <li class="slider__slide">
-            <h3 class="slider__slide-header"></h3>
-            <p class="slider__slide-text"></p>
-          </li>
-        </ul>
-        <ul class="testimonies__slider-controls controls">
-          <li class="controls__item">
-            <i class="controls__button"></i>
-          </li>
-          <li class="controls__item">
-            <i class="controls__button"></i>
-          </li>
-          <li class="controls__item">
-            <i class="controls__button"></i>
+          <li class="reviews__item">
+            <h3 class="reviews__item-header"></h3>
+            <p class="reviews__item-text"></p>
           </li>
         </ul>
+        <div class="controls">
+          <div class="controls__toggle controls__toggle--current"></div>
+          <div class="controls__toggle"></div>
+          <div class="controls__toggle"></div>
+        </div>
       </section>
       <section class="packages">
         <ul class="packages__slider slider">
           <li class="slider__slide">
             <table class="slider__table price-table">
-              <caption>Прайс на тариф "База"</caption>
               <thead class="price-table__thead">
                 <tr class="price-table__row">
                   <th class="price-table__head">
-                    <span class="price-table__name">База</span>
-                    <span class="price-table__price">1,99 USD</span>
+                    <p class="price-table__name">База</p>
+                    <p class="price-table__price">1,99 USD</p>
                   </th>
                 </tr>
               </thead>
               <tbody class="price-table__body">
                 <tr class="price-table__row">
-                  <td class="price-table__tdata">Розовый фильтр</td>
+                  <td class="price-table__tdata price-table__tdata--checked">
+                    Розовый фильтр
+                  </td>
                 </tr>
                 <tr class="price-table__row">
-                  <td class="price-table__tdata">Смайлики</td>
+                  <td class="price-table__tdata price-table__tdata--crossed">
+                    Смайлики
+                  </td>
                 </tr>
                 <tr class="price-table__row">
-                  <td class="price-table__tdata">Комментарии</td>
+                  <td class="price-table__tdata price-table__tdata--crossed">
+                    Комментарии
+                  </td>
                 </tr>
               </tbody>
             </table>
           </li>
-          <li class="slider__slide">
+          <li class="slider__slide visually-hidden">
             <table class="slider__table price-table hit-flag">
-              <caption>Прайс на тариф "Стандарт"</caption>
               <thead class="price-table__thead">
                 <tr class="price-table__row">
                   <th class="price-table__head">
-                    <span class="price-table__name">Стандарт</span>
-                    <span class="price-table__price">3,99 USD</span>
+                    <p class="price-table__name">Стандарт</p>
+                    <p class="price-table__price">3,99 USD</p>
                   </th>
                 </tr>
               </thead>
               <tbody class="price-table__body">
                 <tr class="price-table__row">
-                  <td class="price-table__tdata">Розовый фильтр</td>
+                  <td class="price-table__tdata price-table__tdata--checked">
+                    Розовый фильтр
+                  </td>
                 </tr>
                 <tr class="price-table__row">
-                  <td class="price-table__tdata">Смайлики</td>
+                  <td class="price-table__tdata price-table__tdata--checked">
+                    Смайлики
+                  </td>
                 </tr>
                 <tr class="price-table__row">
-                  <td class="price-table__tdata">Комментарии</td>
+                  <td class="price-table__tdata price-table__tdata--crossed">
+                    Комментарии
+                  </td>
                 </tr>
               </tbody>
             </table>
           </li>
-          <li class="slider__slide">
+          <li class="slider__slide visually-hidden">
             <table class="slider__table price-table">
-              <caption>Прайс на тариф "Анлим"</caption>
               <thead class="price-table__thead">
                 <tr class="price-table__row">
                   <th class="price-table__head">
-                    <span class="price-table__name">Анлим</span>
-                    <span class="price-table__price">9,99 USD</span>
+                    <p class="price-table__name">Анлим</p>
+                    <p class="price-table__price">9,99 USD</p>
                   </th>
                 </tr>
               </thead>
               <tbody class="price-table__body">
                 <tr class="price-table__row">
-                  <td class="price-table__tdata">Розовый фильтр</td>
+                  <td class="price-table__tdata price-table__tdata--checked">
+                    Розовый фильтр
+                  </td>
                 </tr>
                 <tr class="price-table__row">
-                  <td class="price-table__tdata">Смайлики</td>
+                  <td class="price-table__tdata price-table__tdata--checked">
+                    Смайлики
+                  </td>
                 </tr>
                 <tr class="price-table__row">
-                  <td class="price-table__tdata">Комментарии</td>
+                  <td class="price-table__tdata price-table__tdata--checked">
+                    Комментарии
+                  </td>
                 </tr>
               </tbody>
             </table>
           </li>
         </ul>
-        <ul class="packages__slider-controls controls">
-          <li class="controls__item">
-            <i class="controls__button"></i>
-          </li>
-          <li class="controls__item">
-            <i class="controls__button"></i>
-          </li>
-          <li class="controls__item">
-            <i class="controls__button"></i>
-          </li>
-        </ul>
+        <div class="controls">
+          <div class="controls__toggle"></div>
+          <div class="controls__toggle controls__toggle--current"></div>
+          <div class="controls__toggle"></div>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
       <section class="contacts">
-        <p class="contacts__hook">
-          Остались вопросы?
-          Свяжитесь с нами!
-        </p>
-        <address class="contacts__container">
+        <div class="hook wrapper contacts__hook">
+          <p class="hook__text">
+            Остались вопросы?
+            Свяжитесь с нами!
+          </p>
+        </div>
+        <address class="wrapper contacts__address">
           <div class="contacts__item">
-            <span class="contacts__item-name">Звоните:</span>
-            <a href="tel:+78125556666" class="contacts__tel">
+            <span class="small-header contacts__item-name">Звоните:</span>
+            <a href="tel:+78125556666" class="contacts__info contacts__info--tel">
             +7 (812) 555-66-66
             </a>
           </div>
           <div class="contacts__item">
-            <span class="contacts__item-name">Звоните:</span>
-            <a href="mailto:mail@htmlacademy.ru" class="contacts__email">
+            <span class="small-header contacts__item-name">Пишите:</span>
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__info contacts__info--email">
               mail@htmlacademy.ru
             </a>
           </div>
           <div class="contacts__item">
-            <span class="contacts__item-name">Звоните:</span>
-            <p class="contacts__address">
+            <span class="small-header contacts__item-name">Приезжайте в гости:</span>
+            <p class="contacts__info contacts__info--address">
               ул. Большая Конюшенная, 19/8
             </p>
           </div>
