@@ -1,0 +1,39 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 29px;
+
+  background-color: #1d2631;
+}
+
+.promo__background {
+  position: relative;
+  height: 462px;
+  width: 100%;
+
+  background-image: url("../img/iphone-hand-desktop@1x.png"),
+  url("../img/bg-back-mobile@1x.jpg");
+  background-position: -171px 176px, -200px 0;
+  background-size: 507px auto, auto;
+  background-repeat: no-repeat;
+}
+
+.promo__container {
+  padding-top: 28px;
+}
+
+.promo__download-btn {
+  margin-bottom: 32px;
+}
+
+.promo__small {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #fff;
+
+  text-align: center;
+}

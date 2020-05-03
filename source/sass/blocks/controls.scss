@@ -1,0 +1,28 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls__toggle {
+  margin-right: 19px;
+  width: 6px;
+  height: 6px;
+
+  background-color: #bec2c7;
+  border-radius: 50%;
+}
+
+.controls__toggle--current {
+  margin-right: 16px;
+  margin-bottom: 0;
+  width: 11px;
+  height: 11px;
+  background-color: #fff;
+  border: 3px solid #283645;
+}
+
+.controls__toggle:last-child,
+.controls__toggle--current:last-child {
+  margin-right: 0;
+}

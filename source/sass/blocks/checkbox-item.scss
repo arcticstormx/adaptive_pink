@@ -1,0 +1,45 @@
+.checkbox-item {
+  display: flex;
+}
+
+.checkbox-item__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  padding-left: 70px;
+  margin-bottom: 43px;
+  height: 39px;
+
+  font-size: 18px;
+  line-height: 1;
+  text-transform: none;
+  color: #283645;
+}
+
+.checkbox-item__label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 39px;
+  height: 39px;
+
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+}
+
+.checkbox-item__input:checked + .checkbox-item__label::after {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 9px;
+
+  width: 22px;
+  height: 16px;
+
+  background-image: url("../img/icons/icon-tick-red.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

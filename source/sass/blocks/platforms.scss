@@ -1,0 +1,39 @@
+.platforms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding-left: 37px;
+  padding-right: 37px;
+  margin-bottom: 23px;
+}
+
+.platforms__item {
+  display: flex;
+  align-items: center;
+}
+
+.platforms__link {
+  display: flex;
+  background-repeat: no-repeat;
+}
+
+.platforms__link--apple {
+  width: 47px;
+  height: 56px;
+  background-image: url("../img/icons/logo-apple.svg");
+}
+
+.platforms__link--android {
+  width: 43px;
+  height: 47px;
+  background-image: url("../img/icons/logo-android.svg");
+
+}
+
+.platforms__link--windows {
+  width: 44px;
+  height: 41px;
+  background-image: url("../img/icons/logo-microsoft.svg");
+
+}

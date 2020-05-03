@@ -1,0 +1,20 @@
+.packages {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 91px;
+  padding-bottom: 48px;
+
+  background-color: #f2f2f2;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-position: 0 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+}
+
+.packages__slider {
+  overflow-x: auto;
+  display: flex;
+  margin-bottom: 41px;
+}
