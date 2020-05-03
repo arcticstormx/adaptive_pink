@@ -117,75 +117,51 @@ a {
 }
 
 .header__container {
+  z-index: 10;
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header__main {
   display: flex;
   justify-content: space-between;
   padding: 21px 20px;
-  width: 100%;
   height: 66px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.header__list {
-  // display: flex;
+.header__main-nav {
   display: none;
-  flex-direction: column;
-
-  margin: 0;
-  padding: 0;
-
-  background-color: #283645;
-}
-
-.header__list-item {
-}
-
-.header__list-item--header {
-  display: flex;
-  justify-content: space-between;
-
-  padding: 21px 20px 0;
-  height: 70px;
-
-  background-color: #283645;
-  border-bottom: 1px solid #283544;
-}
-
-.header__item-link {
-  display: flex;
-  justify-content: center;
-
-  padding: 24px 20px 0;
-  height: 64px;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1;
-  color: #fff;
-  text-transform: uppercase;
-
-  background-color: #283645;
-  border-bottom: 1px solid #000;
-  border-top: 1px solid #485461;
-}
-
-.header__list-logo {
-  padding: 0;
-
-  border-top: none;
 }
 
 .main-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-nav__body {
   display: none;
 }
 
-.main-nav__burger {
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
 }
+
+.main-nav__link {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #283645;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+}
+
 
 .burger {
   width: 50px;
@@ -202,13 +178,21 @@ a {
   display: flex;
   flex-direction: column;
 
-  padding: 462px 20px 29px;
+  padding-bottom: 29px;
 
   background-color: #1d2631;
-  background-image: url("http://placehold.it/320x462");
-  background-position: 0 0;
+}
+
+.promo__background {
+  position: relative;
+  height: 462px;
+  width: 100%;
+
+  background-image: url("../img/iphone-hand-desktop@1x.png"),
+  url("../img/bg-back-mobile@1x.jpg");
+  background-position: -171px 176px, -200px 0;
+  background-size: 507px auto, auto;
   background-repeat: no-repeat;
-  background-size: 320px 462px;
 }
 
 .promo__container {
@@ -216,7 +200,6 @@ a {
 }
 
 .promo__download-btn {
-
   margin-bottom: 32px;
 }
 
@@ -225,17 +208,39 @@ a {
   flex-direction: row;
   justify-content: space-between;
 
-  padding: 0 37px;
-  margin: 0;
+  padding-left: 37px;
+  padding-right: 37px;
   margin-bottom: 23px;
+}
+
+.platforms__item {
+  display: flex;
+  align-items: center;
 }
 
 .platforms__link {
   display: flex;
-  width: 50px;
-  height: 56px;
+  background-repeat: no-repeat;
+}
 
-  background-color: #fff;
+.platforms__link--apple {
+  width: 47px;
+  height: 56px;
+  background-image: url("../img/icons/logo-apple.svg");
+}
+
+.platforms__link--android {
+  width: 43px;
+  height: 47px;
+  background-image: url("../img/icons/logo-android.svg");
+
+}
+
+.platforms__link--windows {
+  width: 44px;
+  height: 41px;
+  background-image: url("../img/icons/logo-microsoft.svg");
+
 }
 
 .promo__small {
@@ -365,11 +370,12 @@ a {
   margin-right: 0;
 }
 
+
 .packages {
   display: flex;
   flex-direction: column;
 
-  padding-top: 87px;
+  padding-top: 91px;
   padding-bottom: 48px;
 
   background-color: #f2f2f2;
@@ -380,19 +386,26 @@ a {
   background-clip: border-box;
 }
 
-.price-table {
-  margin-left: 21px;
-  margin-bottom: 44px;
-  width: 276px;
-  border-spacing: 0;
-  border-collapse: collapse;
+.packages__slider {
+  overflow-x: auto;
+  display: flex;
+  margin-bottom: 41px;
 }
 
+.packages__slide {
+}
 
-.price-table__thead {
+.price-table {
+  width: 276px;
+
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
 }
 
 .price-table__row {
+  background-color: #fff;
 }
 
 .price-table__tdata {
@@ -473,6 +486,11 @@ a {
   position: relative;
 }
 
+.contacts__hook {
+  padding-top: 43px;
+  padding-bottom: 38px;
+}
+
 .contacts__address {
   font-style: normal
 }
@@ -481,9 +499,11 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 25px;
 }
 
 .contacts__item-name {
+  margin-bottom: 4px;
   color: #283645;
 }
 

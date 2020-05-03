@@ -8,13 +8,14 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a class="header__logo" href="">
-          <img src="img/icons/logo-pink-white-mobile.svg" alt="" class="header__logo-self">
-        </a>
-        <div class="main-nav header__main-nav">
-          <div class="burger main-nav__burger">
+        <div class="header__main">
+          <a class="header__logo" href="">
+            <img src="img/icons/logo-pink-white-mobile.svg" alt="" class="header__logo-self">
+          </a>
+          <div class="burger header__burger">
           </div>
-          <nav class="main-nav__body">
+        </div>
+          <nav class="main-nav header__main-nav">
             <ul class="main-nav__list">
               <li>
                 <a class="main-nav__link" href="">Главная</a>
@@ -30,23 +31,22 @@
               </li>
             </ul>
           </nav>
-        </div>
       </div>
     </header>
     <main>
       <section class="promo">
-        <!-- <div class="promo__picture"></div> -->
-        <div class="promo__container">
-          <a href="" class="promo__download-btn">Скачать приложение</a>
+        <div class="promo__background"></div>
+        <div class="wrapper promo__container">
+          <a href="" class="button promo__download-btn">Скачать приложение</a>
           <ul class=" platforms">
             <li class="platforms__item">
-              <a class="platforms__link"></a>
+              <a class="platforms__link platforms__link--apple"></a>
             </li>
             <li class="platforms__item">
-              <a class="platforms__link"></a>
+              <a class="platforms__link platforms__link--android"></a>
             </li>
             <li class="platforms__item">
-              <a class="platforms__link"></a>
+              <a class="platforms__link platforms__link--windows"></a>
             </li>
           </ul>
           <p class="promo__small">
@@ -110,18 +110,15 @@
         </div>
       </section>
       <section class="packages">
-        <ul class="packages__slider slider">
-          <li class="slider__slide">
-            <table class="slider__table price-table">
-              <thead class="price-table__thead">
+          <ul class="packages__slider">
+            <li class="packages__slide">
+              <table class="packages__table price-table">
                 <tr class="price-table__row">
                   <th class="price-table__head">
                     <p class="price-table__name">База</p>
                     <p class="price-table__price">1,99 USD</p>
                   </th>
                 </tr>
-              </thead>
-              <tbody class="price-table__body">
                 <tr class="price-table__row">
                   <td class="price-table__tdata price-table__tdata--checked">
                     Розовый фильтр
@@ -137,20 +134,16 @@
                     Комментарии
                   </td>
                 </tr>
-              </tbody>
-            </table>
-          </li>
-          <li class="slider__slide visually-hidden">
-            <table class="slider__table price-table hit-flag">
-              <thead class="price-table__thead">
+              </table>
+            </li>
+            <li class="packages__slide">
+              <table class="packages__table price-table hit-flag">
                 <tr class="price-table__row">
                   <th class="price-table__head">
                     <p class="price-table__name">Стандарт</p>
                     <p class="price-table__price">3,99 USD</p>
                   </th>
                 </tr>
-              </thead>
-              <tbody class="price-table__body">
                 <tr class="price-table__row">
                   <td class="price-table__tdata price-table__tdata--checked">
                     Розовый фильтр
@@ -166,20 +159,16 @@
                     Комментарии
                   </td>
                 </tr>
-              </tbody>
-            </table>
-          </li>
-          <li class="slider__slide visually-hidden">
-            <table class="slider__table price-table">
-              <thead class="price-table__thead">
+              </table>
+            </li>
+            <li class="packages__slide">
+              <table class="packages__table price-table">
                 <tr class="price-table__row">
                   <th class="price-table__head">
                     <p class="price-table__name">Анлим</p>
                     <p class="price-table__price">9,99 USD</p>
                   </th>
                 </tr>
-              </thead>
-              <tbody class="price-table__body">
                 <tr class="price-table__row">
                   <td class="price-table__tdata price-table__tdata--checked">
                     Розовый фильтр
@@ -194,11 +183,10 @@
                   <td class="price-table__tdata price-table__tdata--checked">
                     Комментарии
                   </td>
-                </tr>
-              </tbody>
-            </table>
-          </li>
-        </ul>
+                  </tr>
+              </table>
+            </li>
+          </ul>
         <div class="controls">
           <div class="controls__toggle"></div>
           <div class="controls__toggle controls__toggle--current"></div>
