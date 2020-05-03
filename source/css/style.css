@@ -505,8 +505,6 @@ a {
   font-weight: 300; }
 
 .hook-small {
-  padding-top: 47px;
-  padding-bottom: 49px;
   text-align: center; }
 
 .hook-small__text {
@@ -515,12 +513,15 @@ a {
   line-height: 30px;
   color: #283645; }
 
+.main-form {
+  padding-bottom: 22px; }
+
 .main-form__title {
   padding: 96px 20px 55px; }
 
 .main-form__subtitle {
-  padding-top: 47px;
-  padding-bottom: 49px; }
+  padding-top: 45px;
+  padding-bottom: 34px; }
 
 .text-item {
   display: -webkit-box;
@@ -729,7 +730,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 42px;
+  margin-bottom: 44px;
   width: 100%;
   height: 63px;
   font-size: 18px;
@@ -865,6 +866,10 @@ a {
 .gallery__title {
   padding-top: 96px;
   padding-bottom: 82px; }
+
+.gallery__subtitle {
+  padding-top: 47px;
+  padding-bottom: 49px; }
 
 .gallery__footer {
   padding-top: 26px;
