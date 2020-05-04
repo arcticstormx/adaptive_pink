@@ -14,3 +14,36 @@
 .footer__social {
   margin-bottom: 39px;
 }
+
+.footer--index {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .footer {
+    background-color: #fff;
+  &--index {
+    display: flex;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &__logo {
+    margin-top: -5px;
+    margin-right: 77px;
+    margin-bottom: 0;
+  }
+  &__logo-self {
+  }
+  &__social {
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
+  &__copyright {
+  }
+}
+
+}

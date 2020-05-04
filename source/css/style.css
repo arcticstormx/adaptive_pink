@@ -692,6 +692,12 @@ a {
   background-repeat: no-repeat;
   background-size: contain; }
 
+@media (min-width: 660px) {
+  .copyright__text {
+    margin-right: 15px; }
+  .copyright__link {
+    margin-top: 2px; } }
+
 .range {
   position: relative;
   margin: 0 auto;
@@ -978,6 +984,10 @@ a {
   background-repeat: no-repeat;
   background-clip: border-box; }
 
+.packages__container {
+  margin-left: auto;
+  margin-right: auto; }
+
 .packages__slider {
   overflow-x: auto;
   display: -webkit-box;
@@ -985,8 +995,13 @@ a {
   display: flex;
   margin-bottom: 41px; }
 
+@media (min-width: 660px) {
+  .packages {
+    padding-bottom: 25px; }
+    .packages__controls {
+      display: none; } }
+
 .price-table {
-  width: 276px;
   border-spacing: 0;
   border-collapse: collapse;
   border-left: 2px solid #e5e5e5;
@@ -997,21 +1012,7 @@ a {
 
 .price-table__tdata {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 17px 0 21px;
-  height: 61px;
+  width: 276px;
   font-size: 14px;
   line-height: 1;
   font-weight: 400;
@@ -1042,21 +1043,12 @@ a {
   background-repeat: no-repeat; }
 
 .price-table__head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 17px;
-  height: 98px;
   color: #fff;
   text-transform: uppercase;
   background-color: #283645; }
+
+.price-table__head:first-child {
+  visibility: hidden; }
 
 .price-table__name {
   font-size: 18px;
@@ -1067,6 +1059,10 @@ a {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300; }
+
+@media (min-width: 660px) {
+  .price-table {
+    height: 220px; } }
 
 .contacts {
   position: relative; }
@@ -1092,7 +1088,10 @@ a {
   margin-bottom: 25px; }
 
 .contacts__item-name {
-  margin-bottom: 4px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
   color: #283645; }
 
 .contacts__info {
@@ -1106,10 +1105,8 @@ a {
 
 .contacts__map {
   position: relative;
-  height: 219px;
-  background-image: url("../img/content/map-mobile@1x.jpg");
-  background-size: 100%;
-  background-position: 0 100%; }
+  overflow: hidden;
+  height: 219px; }
 
 .contacts__map::before {
   content: '';
@@ -1124,18 +1121,42 @@ a {
   background-repeat: no-repeat;
   background-clip: border-box; }
 
-.contacts__map::after {
-  content: '';
+.contacts__map-img {
   position: absolute;
-  bottom: 70px;
-  left: 50%;
-  margin-left: -18px;
-  width: 36px;
-  height: 35px;
-  background-image: url("../img/icon-map-marker.svg");
-  background-position: 0 0;
-  background-size: 100%;
-  background-repeat: no-repeat; }
+  width: 320px; }
+
+@media (min-width: 660px) {
+  .contacts__hook {
+    padding-top: 45px;
+    padding-bottom: 46px;
+    padding-left: 100px;
+    padding-right: 100px; }
+  .contacts__address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .contacts__item {
+    width: 50%;
+    margin-bottom: 48px; }
+  .contacts__item:last-child {
+    margin-bottom: 30px;
+    padding-left: 180px;
+    padding-right: 180px;
+    width: 100%; }
+  .contacts__item-name {
+    font-size: 18px; }
+  .contacts__map {
+    height: 373px; }
+  .contacts__map-img {
+    top: -346px;
+    left: -20px;
+    width: 700px; } }
 
 .filter {
   background-color: #f2f2f2; }
@@ -1555,5 +1576,33 @@ a {
 
 .footer__social {
   margin-bottom: 39px; }
+
+.footer--index {
+  display: none; }
+
+@media (min-width: 660px) {
+  .footer {
+    background-color: #fff; }
+    .footer--index {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .footer__container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      padding-left: 20px;
+      padding-right: 20px; }
+    .footer__logo {
+      margin-top: -5px;
+      margin-right: 77px;
+      margin-bottom: 0; }
+    .footer__social {
+      margin-right: 93px;
+      margin-bottom: 0; } }
 
 /*# sourceMappingURL=style.css.map */

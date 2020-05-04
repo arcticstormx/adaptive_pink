@@ -19,3 +19,16 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+@media (min-width: $tablet) {
+  .copyright {
+
+    &__text {
+      margin-right: 15px;
+    }
+    &__link {
+      margin-top: 2px;
+    }
+  }
+
+}
