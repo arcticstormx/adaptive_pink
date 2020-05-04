@@ -1,0 +1,65 @@
+ .research {
+  display: none;
+ }
+
+@media (min-width: $tablet) {
+  .research {
+    display: block;
+    padding-top: 59px;
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    &__img {
+      position: relative;
+      display: flex;
+      flex-shrink: 0;
+
+      margin-right: 72px;
+      width: 238px;
+      height: 276px;
+
+      background-image: url("../img/icon-editor-diagram-fill.svg"),
+        url("../img/icon-timer.svg");
+      background-position: 19px 55px, 0px 0,;
+      background-size: 202px 202px, 238px 276px;
+      background-repeat: no-repeat;
+    }
+    &__number {
+      position: absolute;
+      top: 105px;
+      left: 63px;
+      font-size: 96px;
+      line-height: 1;
+      font-weight: 700;
+      color: #d22856;
+    }
+    &__body {
+      text-align: left;
+      padding-top: 38px;
+
+    }
+    &__header {
+      margin-bottom: 10px;
+      margin-right: 120px;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 700;
+      color: #000;
+    }
+    &__text {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    &__link {
+      font-size: 14px;
+      line-height: 24px;
+      color: #d22856;
+      text-decoration: underline;
+    }
+  }
+}

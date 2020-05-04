@@ -2,3 +2,35 @@
   display: flex;
   flex-direction: column;
 }
+
+.app__intro {
+  padding-top: 40px;
+  padding-bottom: 32px;
+}
+
+.app__features {
+  padding-top: 84px;
+  padding-bottom: 317px;
+}
+
+@media (min-width: $tablet) {
+  .app__intro {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .app__intro .hook__text {
+    margin-bottom: 0;
+  }
+
+  .app__intro .hook__text:last-child {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .app__features {
+    padding-top: 79px;
+    padding-bottom: 42px;
+  }
+}
+

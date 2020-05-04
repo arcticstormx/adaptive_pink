@@ -4,6 +4,7 @@ body {
   padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   min-width: 320px;
+  width: 660px;
 }
 
 ul, ol {
@@ -35,3 +36,9 @@ a {
 *::after {
   box-sizing: inherit;
 }
+
+// variables
+
+$mobile: 320px;
+$tablet: 660px;
+$desktop: 1200px;

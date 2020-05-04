@@ -19,6 +19,43 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+
+.header__logo-self--mobile {
+
+}
+
+.header__logo-self--tablet {
+  display: none;
+}
+
+.header__logo-self--desktop {
+  display: none;
+}
+
 .header__main-nav {
   display: none;
+}
+
+@media (min-width: $tablet) {
+  .header__main {
+    height: 110px;
+  }
+
+  .header__logo {
+    padding-top: 7px;
+  }
+
+  .header__logo-self--mobile {
+    display: none;
+  }
+
+  .header__logo-self--tablet {
+    display: block;
+    width: 147px;
+    height: 40px;
+  }
+
+  .header__burger {
+    margin-top: 24px;
+  }
 }

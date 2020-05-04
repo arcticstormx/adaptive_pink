@@ -1,7 +1,4 @@
 .hook {
-  padding-top: 40px;
-  padding-bottom: 32px;
-  background-color: #fff;
 }
 
 .hook__text {
@@ -17,4 +14,10 @@
 
 .hook__text:last-child {
   margin-bottom: 0;
+}
+
+@media (min-width: $tablet) {
+  .hook__text {
+    font-size: 40px;
+  }
 }

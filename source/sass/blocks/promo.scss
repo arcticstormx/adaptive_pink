@@ -8,7 +8,6 @@
 }
 
 .promo__background {
-  position: relative;
   height: 462px;
   width: 100%;
 
@@ -19,8 +18,19 @@
   background-repeat: no-repeat;
 }
 
-.promo__container {
+.promo__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 28px;
+}
+
+.promo__platforms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 205px;
+  margin-bottom: 23px;
 }
 
 .promo__download-btn {
@@ -36,4 +46,69 @@
   color: #fff;
 
   text-align: center;
+}
+
+.promo__android {
+  margin-top: 7px;
+}
+
+.promo__windows {
+  margin-top: 13px;
+}
+
+.promo__hook-tablet {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .promo {
+    position: relative;
+    padding-bottom: 0;
+  }
+
+  .promo__background {
+  height: 729px;
+  background-image: url("../img/iphone-hand-tablet@1x.png"),
+  url("../img/bg-back-tablet@1x.jpg");
+  background-position: -21px 184px, -270px 0;
+  background-size: auto, auto;
+  background-repeat: no-repeat;
+  }
+
+  .promo__body {
+    position: absolute;
+    top: 202px;
+    left: 20px;
+
+    padding: 0;
+
+    width: 300px;
+    height: 450px;
+    background-color: transparent;
+  }
+
+  .promo__hook-tablet {
+    display: block;
+    margin-bottom: 31px;
+    padding: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .promo__hook-tablet .hook__text {
+    color: #fff;
+  }
+
+  .promo__download-btn {
+    width: 300px;
+    margin-bottom: 46px;
+  }
+
+  .promo__platforms {
+    margin-bottom: 38px;
+  }
+
+  .promo__small {
+    font-size: 18px;
+  }
 }

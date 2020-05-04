@@ -1,8 +1,9 @@
 @import "global/normalize.scss";
 @import "global/font.scss";
 @import "global/scaffolding.scss";
-@import "global/wrapper.scss";
-@import "global/visually-hidden.scss";
+
+@import "blocks/wrapper.scss";
+@import "blocks/visually-hidden.scss";
 
 @import "blocks/button.scss";
 @import "blocks/hook.scss";
@@ -30,5 +31,6 @@
 @import "blocks/form.scss";
 @import "blocks/burger.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/research.scss";
 @import "blocks/header.scss";
 @import "blocks/footer.scss";
