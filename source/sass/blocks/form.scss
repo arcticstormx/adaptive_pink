@@ -162,12 +162,45 @@
   }
 
   .form-contacts__item {
+    position: relative;
     flex-direction: column;
     margin-bottom: 29px;
   }
 
   .form-contacts__item:last-child {
     margin-bottom: 0;
+  }
+
+  .form-contacts__item--tel::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 19px;
+    background-position: 21px 20px;
+  }
+
+  .form-contacts__item--email::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-size: 18px 13px;
+    background-position: 21px 23.5px;
   }
 
   .form-contacts__label {
