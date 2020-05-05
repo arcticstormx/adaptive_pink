@@ -1,5 +1,5 @@
 .main-form {
-  padding-bottom: 22px;
+  margin-bottom: 22px;
 }
 
 .main-form__title {
@@ -9,4 +9,33 @@
 .main-form__subtitle {
   padding-top: 45px;
   padding-bottom: 34px;
+}
+
+.main-form__hook-tablet {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .main-form {
+    margin-bottom: 49px;
+  }
+  .main-form__title {
+    padding: 180px 20px 80px;
+  }
+  .main-form__subtitle {
+    padding-top: 93px;
+    padding-bottom: 71px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .main-form__hook-tablet {
+    display: block;
+  }
+  .main-form__form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
 }

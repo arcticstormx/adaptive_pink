@@ -13,3 +13,13 @@
   text-align: center;
   font-weight: 300;
 }
+
+@media (min-width: $tablet) {
+  .title {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: -271px 0;
+  }
+  .title__self {
+    font-size: 50px;
+  }
+}

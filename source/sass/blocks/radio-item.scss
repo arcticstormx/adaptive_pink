@@ -45,3 +45,9 @@
   background-repeat: no-repeat;
   border-radius: 50%;
 }
+
+@media (min-width: $tablet) {
+  .radio-item__label {
+    padding-left: 59px;
+  }
+}
