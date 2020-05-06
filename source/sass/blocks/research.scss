@@ -25,7 +25,7 @@
       background-image: url("../img/icon-editor-diagram-fill.svg"),
         url("../img/icon-timer.svg");
       background-position: 19px 55px, 0px 0,;
-      background-size: 202px 202px, 238px 276px;
+      background-size: 202px, auto;
       background-repeat: no-repeat;
     }
     &__number {
@@ -61,5 +61,42 @@
       color: #d22856;
       text-decoration: underline;
     }
+  }
+}
+@media (min-width: $desktop) {
+  .research {
+    padding-top: 25px;
+    padding-bottom: 67px;
+    padding-left: 130px;
+    padding-right: 130px;
+    background-color: #f2f2f2;
+  }
+  .research__img {
+    margin-right: 67px;
+    width: 298px;
+    height: 345px;
+    background-position: 22px 68px, 0px 0,;
+    background-size: 253px, auto;
+  }
+  .research__number {
+    top: 130px;
+    left: 80px;
+    font-size: 120px;
+  }
+  .research__body {
+    padding-top: 90px;
+  }
+  .research__header {
+    margin-bottom: 22px;
+    font-size: 30px;
+  }
+  .research__text {
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

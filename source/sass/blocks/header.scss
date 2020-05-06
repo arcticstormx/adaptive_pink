@@ -59,3 +59,40 @@
     margin-top: 24px;
   }
 }
+
+@media (min-width: $desktop) {
+  .header__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 130px;
+    padding-right: 130px;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .header__main {
+    align-items: center;
+    margin-right: 172px;
+    padding: 0;
+    background-color: transparent;
+  }
+  .header__burger {
+    display: none;
+  }
+  .header__logo {
+    margin-bottom: 16px;
+    padding-top: 0;
+  }
+  .header__logo-self--tablet {
+    display: none;
+  }
+  .header__logo-self--desktop {
+    display: block;
+    fill: #fff;
+  }
+  .header__main-nav {
+    display: flex;
+  }
+}

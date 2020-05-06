@@ -32,3 +32,8 @@
   }
 
 }
+@media (min-width: $desktop) {
+  .copyright__text {
+    font-size: 18px;
+  }
+}

@@ -48,3 +48,24 @@
 }
 
 }
+
+@media (min-width: $desktop) {
+  .footer {
+    padding-top: 75px;
+    padding-bottom: 73px;
+  }
+  .footer__container {
+    justify-content: space-between;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+  .footer__logo-self--mobile {
+    display: none;
+  }
+  .footer__logo-self--desktop {
+    display: flex;
+  }
+  .footer__social {
+    margin-right: 69px;
+  }
+}

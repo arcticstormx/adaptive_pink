@@ -13,6 +13,7 @@
   padding-top: 23px;
   padding-bottom: 23px;
 
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1;
   font-weight: 700;
@@ -21,4 +22,27 @@
   background-color: #283645;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
+}
+
+@media (min-width: $desktop) {
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  .main-nav__item {
+    margin-right: 79px;
+  }
+  .main-nav__item:last-child {
+    margin-right: 0;
+  }
+
+  .main-nav__link {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: 400;
+    text-transform: none;
+    border: none;
+    background-color: transparent;
+  }
 }

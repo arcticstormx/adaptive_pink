@@ -85,3 +85,9 @@
     height: 220px;
   }
 }
+
+@media (min-width: $desktop) {
+  .price-table {
+    height: 281px;
+  }
+}

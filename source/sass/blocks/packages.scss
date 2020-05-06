@@ -32,3 +32,10 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .packages {
+    padding-top: 150px;
+    padding-bottom: 54px;
+  }
+}
