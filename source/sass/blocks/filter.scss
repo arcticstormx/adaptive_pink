@@ -10,6 +10,11 @@
   padding-right: 20px;
 }
 
+.filter__img-self {
+  width: 280px;
+  height: 374px;
+}
+
 .filter__body {
   padding-bottom: 34px;
   border-bottom: 1px solid #dddfe0;
@@ -34,24 +39,25 @@
   margin-right: 0;
 }
 
-.filter__mode--crop {
+.filter__icon {
+  fill: #b5b9be;
+}
+
+.filter__icon--crop {
   width: 44px;
   height: 44px;
 }
 
-.filter__mode--fill {
+.filter__icon--fill {
   width: 48px;
   height: 43px;
 }
 
-.filter__mode--contrast {
+.filter__icon--contrast {
   width: 32px;
   height: 32px;
 }
 
-.filter__icon {
-  fill: #b5b9be;
-}
 
 .filter__icon--current {
   fill: #d22856;
@@ -75,3 +81,123 @@
   color: #dddfe0;
   border-color: #dddfe0;
 }
+
+@media (min-width: $tablet) {
+  .filter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 57px 20px 54px;
+  }
+
+  .filter__img {
+    margin-right: 40px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .filter__img-self {
+    width: 300px;
+    height: 400px;
+  }
+
+  .filter__body {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .filter__modes {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 65px;
+    padding: 0;
+  }
+
+  .filter__mode-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-bottom: 16px;
+    padding-top: 8px;
+    padding-bottom: 25px;
+    padding-left: 7px;
+    padding-right: 5px;
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  .filter__mode-container:last-child {
+    margin-bottom: 0;
+  }
+
+  .filter__mode {
+    margin-right: 0;
+    height: 22px;
+  }
+
+  .filter__mode--fill {
+    padding-top: 3px;
+  }
+
+  .filter__mode--contrast {
+    padding-top: 3px;
+    padding-left: 5px;
+  }
+
+  .filter__icon {
+    fill: #d22856;
+  }
+
+  .filter__icon--crop {
+    width: 22px;
+    height: 22px;
+  }
+
+  .filter__icon--fill {
+    width: 24px;
+    height: 22px;
+  }
+
+  .filter__icon--contrast {
+    width: 16px;
+    height: 16px;
+  }
+
+  .filter__range {
+    margin: 0;
+    margin-top: 11px;
+    width: 202px;
+  }
+
+  .filter__range--mobile {
+    display: none;
+  }
+
+  .filter__range--crop .range__toggle {
+    left: 146px;
+  }
+
+  .filter__range--fill .range__toggle {
+    left: 25px;
+  }
+
+  .filter__range--contrast .range__toggle {
+    left: 96px;
+  }
+
+  .filter__buttons {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 7px;
+  }
+
+  .filter__btn {
+    margin-bottom: 24px;
+    width: 260px;
+  }
+
+  .filter__btn:last-child {
+    margin-bottom: 0;
+  }
+}
+
