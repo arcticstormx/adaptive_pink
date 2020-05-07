@@ -51,8 +51,11 @@
 
 @media (min-width: $desktop) {
   .footer {
+    padding-top: 25px;
+    padding-bottom: 72px;
+  }
+  .footer--index {
     padding-top: 75px;
-    padding-bottom: 73px;
   }
   .footer__container {
     justify-content: space-between;
@@ -67,5 +70,8 @@
   }
   .footer__social {
     margin-right: 69px;
+  }
+  .footer__social--form {
+    margin-right: 61px;
   }
 }

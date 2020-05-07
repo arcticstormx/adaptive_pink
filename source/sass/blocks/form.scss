@@ -63,6 +63,9 @@
 .form__small-asterisk {
   color: #d22856;
 }
+.form__small-desktop {
+  display: none;
+}
 
 .form-feats {
   padding-top: 38px;
@@ -120,17 +123,21 @@
   .form__small {
     margin-top: 27px;
   }
+  .form__identity-container {
+    order: 1;
+  }
 
   .form-identity {
     margin-bottom: 6px;
     padding-left: 0;
     padding-right: 0;
     border: none;
-    order: 1;
   }
 
-  .form-feats {
+  .form__feats-container{
     order: 4;
+  }
+  .form-feats {
     padding-bottom: 48px;
     background-color: transparent;
   }
@@ -151,11 +158,12 @@
     padding-left: 59px;
     margin-bottom: 0;
   }
-
+  .form__contacts-container {
+    order: 3;
+  }
   .form-contacts {
     padding-top: 37px;
     padding-bottom: 26px;
-    order: 3;
   }
   .form-contacts__legend {
     display: block;
@@ -213,15 +221,20 @@
     order: -1;
   }
 
+  .form__platforms-container {
+    order: 2;
+  }
   .form-platforms {
     padding-top: 8px;
     padding-bottom: 18px;
-    order: 2;
     background-color: transparent;
   }
 
-  .form-review {
+  .form__review-container {
     order: 5;
+  }
+
+  .form-review {
     margin-bottom: 66px;
     padding-top: 36px;
   }
@@ -237,4 +250,77 @@
     height: 193px;
   }
 
+}
+@media (min-width: $desktop) {
+  .form__fieldset {
+    width: 940px;
+  }
+  .form__small-desktop {
+    display: inline;
+  }
+  .form-identity {
+    margin-top: 14px;
+    margin-right: 70px;
+    width: 435px;
+  }
+  .form__feats-container {
+  }
+  .form-feats {
+    display: flex;
+    padding-left: 58px;
+    padding-right: 5px;
+    padding-bottom: 12px;
+    padding-top: 38px;
+  }
+  .form-feats__body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 164px;
+  }
+  .form-feats__item {
+
+  }
+  .form-platforms {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 435px;
+  }
+  .form-platforms__legend {
+    margin-bottom: 38px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .form-platforms__item {
+    margin-left: 54px;
+  }
+  .form-contacts {
+    padding-top: 33px;
+    padding-bottom: 13px;
+  }
+  .form-contacts__body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .form-contacts__item {
+    width: 375px;
+    margin-bottom: 0;
+  }
+  .form-review {
+    padding-top: 34px;
+    padding-bottom: 42px;
+  }
+  .form-review__item {
+    margin-bottom: 0;
+  }
+  .form-review__textarea {
+    height: auto;
+    min-height: 128px;
+  }
+  .form__submit-container {
+    flex-grow: 1;
+    justify-content: space-between;
+  }
 }
