@@ -4,10 +4,11 @@
 
 .contacts__hook {
   padding-top: 43px;
-  padding-bottom: 38px;
+  padding-bottom: 36px;
 }
 
 .contacts__address {
+  padding-bottom: 38px;
   font-style: normal
 }
 
@@ -15,11 +16,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.contacts__item--tel {
+  margin-bottom: 24px;
+}
+
+.contacts__item--email {
   margin-bottom: 25px;
 }
 
+.contacts__item--address {
+
+}
+
 .contacts__item-name {
-  margin-bottom: 5px;
   font-size: 18px;
   line-height: 1.2;
   font-weight: 700;
@@ -32,19 +43,19 @@
   font-weight: 300;
   color: #d22856;
 }
+.contacts__info--email {
+  margin-top: 4px;
+}
 
 .contacts__info--address {
+  margin-top: 5px;
   text-align: center;
 }
 
 .contacts__map {
   position: relative;
   overflow: hidden;
-  height: 219px;
-
-  // background-image: url("../img/content/map-mobile@1x.jpg");
-  // background-size: 100%;
-  // background-position: 0 100%;
+  height: 200px;
 }
 
 .contacts__map::before {
@@ -71,7 +82,7 @@
 .contacts__map::after {
   content: '';
   position: absolute;
-  bottom: 70px;
+  bottom: 69px;
   left: 50%;
 
   margin-left: -18px;
@@ -96,25 +107,33 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      padding-bottom: 27px;
     }
     &__item {
       width: 50%;
       margin-bottom: 48px;
     }
     &__item:last-child {
-      margin-bottom: 30px;
+      margin-bottom: 0;
       padding-left: 180px;
       padding-right: 180px;
       width: 100%;
 
     }
     &__item-name {
+      margin-bottom: 5px;
       font-size: 18px;
     }
     &__info {
     }
+    &__info--address {
+      margin-top: 0;
+    }
     &__map {
       height: 373px;
+    }
+    &__map::after {
+      bottom: 143px;
     }
     &__map-img {
       top: -346px;
@@ -136,6 +155,7 @@
   }
   .contacts__address {
     flex-wrap: nowrap;
+    padding-bottom: 0;
     padding-right: 130px;
     padding-left: 130px;
   }

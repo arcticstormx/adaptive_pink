@@ -23,7 +23,7 @@
 }
 
 .text-item__input {
-  padding: 14.5px 20px 14.5px 18px;
+  padding: 14.5px 20px 14.5px 20px;
   height: 63px;
 
   font-size: 18px;
@@ -41,12 +41,6 @@
   font-family: inherit;
 }
 
-.text-item__input--textarea {
-  width: 280px;
-  height: 201px;
-  resize: none;
-}
-
 @media (min-width: $tablet) {
   .text-item {
     flex-direction: row;
@@ -59,6 +53,7 @@
       padding-left: 0;
     }
     &__input {
+      padding-left: 18px;
       flex-grow: 1;
     }
   }

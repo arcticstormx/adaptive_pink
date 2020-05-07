@@ -16,7 +16,7 @@
 @media (min-width: $tablet) {
   .app__intro {
     padding-top: 48px;
-    padding-bottom: 78px;
+    padding-bottom: 48px;
   }
 
   .app__intro .hook__text {
@@ -37,6 +37,7 @@
 @media (min-width: $desktop) {
   .app__intro {
     padding-top: 68px;
+    padding-bottom: 78px;
   }
   .app__intro .hook__text:last-child {
     padding-left: 340px;
