@@ -33,3 +33,20 @@
     padding-bottom: 70px;
   }
 }
+@media (min-width: $desktop) {
+  .gallery__title {
+    padding-top: 173px;
+    padding-bottom: 101px;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+  .gallery__subtitle {
+    padding-bottom: 89px;
+    padding-left: 280px;
+    padding-right: 280px;
+  }
+  .gallery__footer {
+    padding-top: 10px;
+    padding-bottom: 66px;
+  }
+}

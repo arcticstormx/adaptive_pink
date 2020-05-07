@@ -201,3 +201,83 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .filter {
+    margin-bottom: 78px;
+    margin-left: 130px;
+    margin-right: 130px;
+    padding-bottom: 57px;
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+  .filter__img {
+    margin-right: 90px;
+  }
+  .filter__body {
+    flex-grow: 1;
+  }
+  .filter__modes {
+    margin-bottom: 148px;
+  }
+  .filter__mode-container {
+    padding: 0;
+    padding-bottom: 14px;
+    padding-right: 30px;
+    margin: 0;
+    margin-bottom: 11px;
+  }
+  .filter__mode-container:last-child {
+    padding-bottom: 18px;
+  }
+  .filter__mode {
+    height: auto;
+  }
+  .filter__mode--crop {
+    margin-top: -3px;
+  }
+  .filter__mode--contrast {
+    padding-top: 7px
+  }
+  .filter__icon--crop {
+    width: 44px;
+    height: 44px;
+  }
+  .filter__icon--fill {
+    width: 48px;
+    height: 43px;
+  }
+  .filter__icon--contrast {
+    width: 32px;
+    height: 32px;
+  }
+  .filter__range {
+    margin-top: 25px;
+    width: 288px;
+  }
+  .filter__range--crop {
+    margin-top: 18px;
+  }
+  .filter__range--crop .range__toggle {
+    left: 71px;
+  }
+  .filter__range--fill .range__toggle {
+    left: 247px;
+  }
+  .filter__range--contrast .range__toggle {
+    left: 160px;
+  }
+  .filter__buttons {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+  }
+  .filter__btn {
+    margin-bottom: 0;
+    margin-right: 44px;
+    width: 183px;
+  }
+  .filter__btn:last-child {
+    margin-right: 0;
+  }
+}
+
