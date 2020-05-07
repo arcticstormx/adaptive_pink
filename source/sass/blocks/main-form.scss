@@ -11,7 +11,7 @@
   padding-bottom: 34px;
 }
 
-.main-form__hook-tablet {
+.main-form__extra-hook {
   display: none;
 }
 
@@ -28,7 +28,7 @@
     padding-left: 50px;
     padding-right: 50px;
   }
-  .main-form__hook-tablet {
+  .main-form__extra-hook {
     display: block;
   }
   .main-form__form {
@@ -38,4 +38,22 @@
     padding-right: 20px;
   }
 
+}
+@media (min-width: $desktop) {
+  .main-form__title {
+    padding: 173px 200px 101px;
+  }
+  .main-form__subtitle {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .main-form__extra-hook {
+    display: inline;
+  }
+  .main-form__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
 }
