@@ -69,6 +69,7 @@
 
   background-color: #283645;
   border: 2px solid #e5e5e5;
+  border-top: none;
 }
 .price-table__head--hit {
   background-image: url("../img/bg-hit.svg");
@@ -107,7 +108,7 @@
 
 @media (min-width: $tablet) {
   .price-table {
-    left: 20px;
+    left: 0;
     margin-left: 0;
     margin-right: 0;
     width: 620px;
@@ -161,6 +162,46 @@
 
 @media (min-width: $desktop) {
   .price-table {
+    width: 940px;
     height: 281px;
+  }
+  .price-table__head {
+    padding-top: 16px;
+    padding-bottom: 23px;
+    border-radius: 3px;
+    border: none;
+  }
+  .price-table__head:nth-child(3) {
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+  }
+  .price-table__head--hit {
+    background-image: url("../img/bg-hit.svg");
+    background-size: 74px 73px;
+    background-repeat: no-repeat;
+    background-position: 0 -2px;
+  }
+  .price-table__head--hit::before {
+    top: 16px;
+    left: 11px;
+  }
+  .price-table__tdata {
+    padding-left: 20px;
+    font-size: 18px;
+    border-radius: 3px;
+  }
+  .price-table__tdata--checked::before {
+    top: 20px;
+    right: 99px;
+  }
+  .price-table__tdata--crossed::before {
+    top: 18px;
+    right: 102px;
+  }
+  .price-table__name {
+    font-size: 18px;
+  }
+  .price-table__price {
+    font-size: 24px;
   }
 }
