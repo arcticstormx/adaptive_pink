@@ -1,11 +1,11 @@
 
 .header {
+  margin-bottom: -66px;
   position: relative;
+  z-index: 10;
 }
 
 .header__container {
-  z-index: 10;
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -14,10 +14,14 @@
 .header__main {
   position: relative;
   display: flex;
-  justify-content: space-between;
   padding: 21px 20px;
   height: 66px;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header__main--open {
+  background-color: #283645;
+  border-bottom: 1px solid #000000;
 }
 
 .header__burger {
@@ -62,6 +66,9 @@
 }
 
 @media (min-width: $tablet) {
+  .header {
+    margin-bottom: -110px;
+  }
   .header__main {
     height: 110px;
   }
@@ -98,8 +105,7 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
   .header__main {
-    align-items: center;
-    margin-right: 172px;
+    display: flex;
     padding: 0;
     background-color: transparent;
   }
@@ -107,8 +113,7 @@
     display: none;
   }
   .header__logo {
-    margin-bottom: 16px;
-    padding-top: 0;
+    left: 0;
   }
   .header__logo-self--tablet {
     display: none;
@@ -118,6 +123,7 @@
     fill: #fff;
   }
   .header__main-nav {
+    margin-left: auto;
     display: flex;
   }
 }
