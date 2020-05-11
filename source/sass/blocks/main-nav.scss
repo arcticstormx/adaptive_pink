@@ -45,4 +45,23 @@
     border: none;
     background-color: transparent;
   }
+  .main-nav__link:hover,
+  .main-nav__link:focus {
+    color: #d22856;
+  }
+  .main-nav__link:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .main-nav__link--active {
+    margin-bottom: -10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+  }
+  .main-nav__link--active:hover,
+  .main-nav__link--active:focus {
+    border-color: #d22856;
+  }
+  .main-nav__link--active:active {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
 }

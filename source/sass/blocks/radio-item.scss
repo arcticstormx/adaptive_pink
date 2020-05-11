@@ -31,6 +31,14 @@
   border-radius: 50%;
 }
 
+.radio-item__label:hover::before,
+.radio-item__label:focus::before {
+  border-color: #283645;
+}
+.radio-item__label:active::before {
+  border-color: #d22856;
+}
+
 .radio-item__input:checked + .radio-item__label::after {
   content: '';
   position: absolute;

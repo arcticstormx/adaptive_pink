@@ -50,7 +50,16 @@
   background-color: #2aab6d;
   border-radius: 2px;
 }
-
+.form__submit-btn:hover,
+.form__submit-btn:focus {
+  background-color: #1c9b5e;
+}
+.form__submit-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.form__submit-btn[disabled] {
+  background-color: #e5e5e5;
+}
 .form__small {
   padding-left: 48px;
   font-size: 14px;

@@ -119,8 +119,15 @@
     width: 29px;
     height: 29px;
     background-color: transparent;
-    border: solid #bec2c7;
+    border: solid rgba(40, 54, 69, 0.3);
     border-width: 0 2px 2px 0;
+  }
+  .reviews__arrow:hover,
+  .reviews__arrow:focus {
+    border-color: rgba(40, 54, 69, 0.6);
+  }
+  .reviews__arrow:active {
+    border-color: rgba(40, 54, 69, 0.1);;
   }
   .reviews__arrow--prev {
     left: 5px;

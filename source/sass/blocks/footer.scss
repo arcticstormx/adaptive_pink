@@ -11,6 +11,15 @@
   margin-bottom: 39px;
 }
 
+.footer__logo:hover .footer__logo-word,
+.footer__logo:focus .footer__logo-word {
+  fill: #d22856;
+}
+
+.footer__logo:hover .footer__logo-word {
+  opacity: 0.3;
+}
+
 .footer__logo-self--desktop {
   display: none;
 }

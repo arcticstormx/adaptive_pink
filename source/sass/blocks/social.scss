@@ -17,9 +17,21 @@
   display: flex;
   width: 50px;
   height: 50px;
-  border: 2px solid #e9ebec;
+  border: 2px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
   background-color: #fff;
+}
+
+.social__link:hover,
+.social__link:focus {
+  border-color: rgba(40, 54, 69, 1);
+}
+
+.social__link:active {
+  border-color: rgba(40, 54, 69, 0.1);
+}
+.social__link:active::before {
+  opacity: 0.3;
 }
 
 .social__link--twitter::before {

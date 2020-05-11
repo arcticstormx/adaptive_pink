@@ -34,7 +34,33 @@
 }
 
 .promo__download-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin-bottom: 32px;
+  width: 280px;
+  height: 55px;
+
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+
+  border: 3px solid #fff;
+  border-radius: 27.5px;
+  background-color: transparent;
+}
+
+.promo__download-btn:hover,
+.promo__download-btn:focus {
+  background-color: #fff;
+  color: #d22856;
+}
+
+.promo__download-btn:active {
+  background: #fff;
+  color: rgba(210, 40, 86, 0.3);
 }
 
 .promo__small {

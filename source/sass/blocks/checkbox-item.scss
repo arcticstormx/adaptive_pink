@@ -30,6 +30,14 @@
   border: 2px solid #e5e5e5;
 }
 
+.checkbox-item__label:hover::before,
+.checkbox-item__label:focus::before {
+  border-color: #283645;
+}
+.checkbox-item__label:active::before {
+  border-color: #d22856;
+}
+
 .checkbox-item__input:checked + .checkbox-item__label::after {
   content: '';
   position: absolute;

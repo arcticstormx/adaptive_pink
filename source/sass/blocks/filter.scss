@@ -42,7 +42,9 @@
 .filter__icon {
   fill: #b5b9be;
 }
-
+.filter__icon:hover {
+  fill: #8d949b;
+}
 .filter__icon--crop {
   width: 44px;
   height: 44px;
@@ -58,8 +60,7 @@
   height: 32px;
 }
 
-
-.filter__icon--current {
+.filter__icon--active {
   fill: #d22856;
 }
 
@@ -77,9 +78,27 @@
   border-color: #d22856;
 }
 
+.filter__btn--submit:hover,
+.filter__btn--submit:focus {
+  color: #fff;
+  background-color: #d22856;
+}
+.filter__btn--submit:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 .filter__btn--cancel {
-  color: #dddfe0;
-  border-color: #dddfe0;
+  color: rgba(40, 54, 69, 0.1);
+  border-color: rgba(40, 54, 69, 0.1);
+}
+.filter__btn--cancel:hover,
+.filter__btn--cancel:focus {
+  color: rgba(40, 54, 69, 0.3);
+  border-color: rgba(40, 54, 69, 0.3);
+}
+
+.filter__btn--cancel:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(40, 54, 69, 0.3);
 }
 
 @media (min-width: $tablet) {
@@ -145,6 +164,9 @@
   }
 
   .filter__icon {
+    fill: #d22856;
+  }
+  .filter__icon:hover {
     fill: #d22856;
   }
 

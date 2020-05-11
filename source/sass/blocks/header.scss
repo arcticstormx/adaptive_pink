@@ -12,6 +12,7 @@
 }
 
 .header__main {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 21px 20px;
@@ -19,6 +20,26 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.header__burger {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+}
+
+.header__logo {
+  position: absolute;
+  top: 21px;
+  left: 20px;
+}
+
+.header__logo-self:hover,
+.header__logo-self:focus {
+  fill: #d22856;
+}
+
+.header__logo-self:active {
+  opacity: 0.3;
+}
 
 .header__logo-self--mobile {
 
@@ -34,6 +55,10 @@
 
 .header__main-nav {
   display: none;
+}
+
+.header__main-nav--show {
+  display: block;
 }
 
 @media (min-width: $tablet) {
