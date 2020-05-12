@@ -35,6 +35,13 @@
 }
 
 @media (min-width: $desktop) {
+  .app {
+  }
+  .app__container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+  }
   .app__intro {
     padding-top: 68px;
     padding-bottom: 78px;
@@ -44,3 +51,4 @@
     padding-right: 340px;
   }
 }
+

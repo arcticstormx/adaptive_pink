@@ -3,6 +3,7 @@
   margin-bottom: -66px;
   position: relative;
   z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .header__container {
@@ -16,7 +17,7 @@
   display: flex;
   padding: 21px 20px;
   height: 66px;
-  background-color: rgba(0, 0, 0, 0.3);
+  // background-color: rgba(0, 0, 0, 0.3);
 }
 
 .header__main--open {
@@ -43,6 +44,7 @@
 
 .header__logo-self:active {
   opacity: 0.3;
+  fill: #fff;
 }
 
 .header__logo-self--mobile {
@@ -88,7 +90,8 @@
   }
 
   .header__burger {
-    margin-top: 24px;
+    top: 45px;
+    // margin-top: 24px;
   }
 }
 
@@ -102,7 +105,6 @@
     padding-left: 130px;
     padding-right: 130px;
     max-width: 1200px;
-    background-color: rgba(0, 0, 0, 0.3);
   }
   .header__main {
     display: flex;

@@ -331,8 +331,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
-  min-width: 320px;
-  width: 1200px; }
+  min-width: 320px; }
 
 ul, ol {
   margin: 0;
@@ -374,6 +373,13 @@ a {
   overflow: hidden; }
 
 .burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
   width: 50px;
   height: 24px;
   border: none;
@@ -383,19 +389,42 @@ a {
 .burger__inner {
   width: 50px;
   height: 4px;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
   .burger__inner::before, .burger__inner::after {
     content: '';
     position: absolute;
     width: 50px;
     height: 4px;
-    background-color: #fff; }
+    background-color: #fff;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
   .burger__inner::before {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+  .burger__inner::after {
     -webkit-transform: translateY(10px);
             transform: translateY(10px); }
-  .burger__inner::after {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px); }
+
+.burger--open {
+  width: 30px;
+  height: 30px; }
+
+.burger--open .burger__inner {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent; }
+
+.burger--open .burger__inner::before {
+  width: 31px;
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px); }
+
+.burger--open .burger__inner::after {
+  width: 31px;
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px); }
 
 .hook__text {
   margin: 0;
@@ -930,11 +959,22 @@ a {
     font-size: 18px; } }
 
 @media (min-width: 1200px) {
+  .promo {
+    height: 853px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .promo__container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px; }
   .promo__background {
     height: 853px;
-    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-    background-position: 146px 209px, -680px 0;
-    background-size: auto, auto;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: 148px bottom;
+    background-size: auto;
     background-repeat: no-repeat; }
   .promo__body {
     top: 218px;
@@ -1005,6 +1045,10 @@ a {
     padding-bottom: 42px; } }
 
 @media (min-width: 1200px) {
+  .app__container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px; }
   .app__intro {
     padding-top: 68px;
     padding-bottom: 78px; }
@@ -2621,7 +2665,8 @@ a {
 .header {
   margin-bottom: -66px;
   position: relative;
-  z-index: 10; }
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3); }
 
 .header__container {
   top: 0;
@@ -2634,8 +2679,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   padding: 21px 20px;
-  height: 66px;
-  background-color: rgba(0, 0, 0, 0.3); }
+  height: 66px; }
 
 .header__main--open {
   background-color: #283645;
@@ -2656,7 +2700,8 @@ a {
   fill: #d22856; }
 
 .header__logo-self:active {
-  opacity: 0.3; }
+  opacity: 0.3;
+  fill: #fff; }
 
 .header__logo-self--tablet {
   display: none; }
@@ -2684,7 +2729,7 @@ a {
     width: 147px;
     height: 40px; }
   .header__burger {
-    margin-top: 24px; } }
+    top: 45px; } }
 
 @media (min-width: 1200px) {
   .header__container {
@@ -2702,8 +2747,7 @@ a {
     margin-right: auto;
     padding-left: 130px;
     padding-right: 130px;
-    max-width: 1200px;
-    background-color: rgba(0, 0, 0, 0.3); }
+    max-width: 1200px; }
   .header__main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2749,7 +2793,7 @@ a {
 .footer__logo:focus .footer__logo-word {
   fill: #d22856; }
 
-.footer__logo:hover .footer__logo-word {
+.footer__logo:active {
   opacity: 0.3; }
 
 .footer__logo-self--desktop {

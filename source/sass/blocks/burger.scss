@@ -1,4 +1,7 @@
 .burger {
+  display: flex;
+  align-items: center;
+  position: relative;
   width: 50px;
   height: 24px;
   border: none;
@@ -10,6 +13,7 @@
   width: 50px;
   height: 4px;
   background-color: #fff;
+  transition: all .2s ease-in-out;
 
   &::before,
   &::after {
@@ -18,11 +22,31 @@
     width: 50px;
     height: 4px;
     background-color: #fff;
+    transition: all .2s ease-in-out;
   }
   &::before {
-    transform: translateY(10px);
+    transform: translateY(-10px);
   }
   &::after {
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
+}
+
+.burger--open {
+  width: 30px;
+  height: 30px;
+}
+
+.burger--open .burger__inner {
+  transform: translateX(-50px);
+  background: transparent;
+}
+.burger--open .burger__inner::before {
+  width: 31px;
+  transform: rotate(-45deg) translate(35px, 35px);
+
+}
+.burger--open .burger__inner::after {
+  width: 31px;
+  transform: rotate(45deg) translate(35px, -35px);
 }
