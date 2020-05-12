@@ -1,6 +1,4 @@
 .packages {
-  // overflow-x: hidden;
-
   display: flex;
   flex-direction: column;
 
@@ -51,11 +49,23 @@
 
 @media (min-width: $desktop) {
   .packages {
-    padding-top: 150px;
-    padding-bottom: 54px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: none;
   }
   .packages__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    padding-bottom: 54px;
     padding-left: 130px;
     padding-right: 130px;
+    width: 1200px;
+    background-color: #f2f2f2;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-position: 0 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-clip: border-box;
   }
 }

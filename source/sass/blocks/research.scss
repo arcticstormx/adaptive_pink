@@ -65,10 +65,16 @@
 }
 @media (min-width: $desktop) {
   .research {
+    padding-top: 0;
+  }
+  .research__container {
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 25px;
     padding-bottom: 67px;
     padding-left: 130px;
     padding-right: 130px;
+    width: 1200px;
     background-color: #f2f2f2;
   }
   .research__img {

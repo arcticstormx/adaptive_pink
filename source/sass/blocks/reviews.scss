@@ -72,20 +72,24 @@
 
 @media (min-width: $desktop) {
   .reviews {
-    padding-top: 186px;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .reviews__container {
     position: relative;
-    padding-left: 125px;
-    padding-right: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 186px;
+    padding-bottom: 20px;
+    padding-left: 255px;
+    padding-right: 255px;
+    width: 1200px;
   }
   .reviews__container::before {
     content: '';
     position: absolute;
-    top: -114px;
-    left: 434px;
+    top: 70px;
+    left: 564px;
 
     width: 79px;
     height: 63px;
@@ -114,7 +118,8 @@
   }
   .reviews__arrow {
     position: absolute;
-    top: 33px;
+    top: 219px;
+
 
     width: 29px;
     height: 29px;
@@ -130,11 +135,11 @@
     border-color: rgba(40, 54, 69, 0.1);;
   }
   .reviews__arrow--prev {
-    left: 5px;
+    left: 135px;
     transform: rotate(135deg);
   }
   .reviews__arrow--next {
-    right: 5px;
+    right: 135px;
     transform: rotate(-45deg);
   }
 

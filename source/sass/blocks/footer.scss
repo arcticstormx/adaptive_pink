@@ -72,8 +72,11 @@
   }
   .footer__container {
     justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 130px;
     padding-right: 130px;
+    width: 1200px;
   }
   .footer__logo-self--mobile {
     display: none;
