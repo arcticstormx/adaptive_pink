@@ -58,21 +58,23 @@
               </g>
             </svg>
           </a>
-          <div class="burger header__burger"></div>
+          <div class="burger header__burger">
+            <div class="burger__inner"></div>
+          </div>
         </div>
         <nav class="main-nav header__main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Главная</a>
+              <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Фотографии</a>
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active" href="">Конкурс</a>
+              <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">HTML Academy</a>
+              <a class="main-nav__link" href="htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -265,5 +267,17 @@
         </div>
       </div>
     </footer>
+    <script>
+    const main = document.querySelector(".header__main");
+    const burger = main.querySelector(".burger");
+    const menu = document.querySelector(".header__main-nav");
+
+    burger.addEventListener("click", (evt) => {
+      menu.classList.toggle("header__main-nav--show");
+      main.classList.toggle("header__main--open");
+      burger.classList.toggle("burger--open");
+    });
+
+  </script>
   </body>
 </html>

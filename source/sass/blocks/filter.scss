@@ -16,22 +16,22 @@
 }
 
 .filter__controls {
-  padding-bottom: 34px;
-  border-bottom: 1px solid #dddfe0;
+  padding-bottom: 40px;
 }
 
 .filter__modes {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 38px;
-  padding-left: 18px;
-  padding-right: 18px;
+  width: 200px;
 }
+
 
 .filter__mode {
   display: flex;
-  margin-right: 36px;
   border: none;
 }
 
@@ -64,13 +64,28 @@
   fill: #d22856;
 }
 
+.filter__range {
+  display: none;
+}
+
+.filter__range--mobile {
+  display: block;
+  margin-bottom: 34px;
+}
+
 .filter__buttons {
-  padding-top: 38px;
-  padding-bottom: 29px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: 1px solid #dddfe0;
 }
 
 .filter__btn {
   margin-bottom: 12px;
+}
+
+.filter__btn:last-child {
+  margin-bottom: 0;
 }
 
 .filter__btn--submit {
