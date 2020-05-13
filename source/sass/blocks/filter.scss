@@ -15,7 +15,7 @@
   height: 374px;
 }
 
-.filter__body {
+.filter__controls {
   padding-bottom: 34px;
   border-bottom: 1px solid #dddfe0;
 }
@@ -103,10 +103,14 @@
 
 @media (min-width: $tablet) {
   .filter {
+    padding: 57px 20px 54px;
+  }
+
+  .filter__body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 57px 20px 54px;
+
   }
 
   .filter__img {
@@ -120,7 +124,7 @@
     height: 400px;
   }
 
-  .filter__body {
+  .filter__controls {
     padding-bottom: 0;
     border-bottom: none;
   }
@@ -226,16 +230,29 @@
 @media (min-width: $desktop) {
   .filter {
     margin-bottom: 78px;
-    margin-left: 130px;
-    margin-right: 130px;
+    padding: 0;
+    background-color: transparent;
+  }
+  .filter__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 130px;
+    padding-right: 130px;
+    width: 1200px;
+  }
+  .filter__body {
+    padding-top: 57px;
     padding-bottom: 57px;
     padding-left: 80px;
     padding-right: 60px;
+    background-color: #f2f2f2;
   }
   .filter__img {
     margin-right: 90px;
   }
-  .filter__body {
+  .filter__img-self {
+  }
+  .filter__controls {
     flex-grow: 1;
   }
   .filter__modes {

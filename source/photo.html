@@ -81,175 +81,213 @@
     <main>
       <section class="gallery">
         <div class="title wrapper gallery__title">
-          <h1 class="title__self">
+          <h1 class="title__self gallery__title-self">
             Фотографии пользователей
           </h1>
         </div>
-        <div class="hook-small wrapper gallery__subtitle">
-          <p class="hook-small__text">
-            Взгляните на фотографии, которые выкладывают пользователи!
-            Видите, как не хватает ваших?
-          </p>
-        </div>
-        <ul class="wrapper posts">
-          <li class="posts__item posts__item--daily">
-            <div class="posts__img">
-              <img src="img/content/panorama-mobile@1x.jpg" alt="" class="posts__img-self" width="320" height="137">
-              <div class="posts__pano-flag">Панорама дня</div>
-            </div>
-            <div class="posts__body">
-              <p class="posts__author">
-                Анна
-                <span class="posts__user-activity">(5 МИНУТ НАЗАД)</span>
-              </p>
-              <p class="posts__comment">
-                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-              </p>
-              <div class="likes posts__likes ">НРАВИТСЯ: 215</div>
-            </div>
-          </li>
-          <li class="posts__item">
-            <div class="posts__img">
-              <img src="img/content/photo-car-mobile@1x.jpg" alt="" class="posts__img-self" width="280" height="180">
-            </div>
-            <div class="posts__body">
-              <p class="posts__author">
-                Левон
-                <span class="posts__user-activity">(5 часов назад)</span>
-              </p>
-              <p class="posts__comment">
-                Вчера он на луну летал, сегодня в руки к нам попал.
-              </p>
-              <div class="posts__likes">НРАВИТСЯ: 356</div>
-            </div>
-          </li>
-          <li class="posts__item">
-            <div class="posts__img">
-              <img src="img/content/photo-drumset-mobile@1x.jpg" alt="" class="posts__img-self" width="280" height="180">
-            </div>
-            <div class="posts__body">
-              <p class="posts__author">
-                Антон
-                <span class="posts__user-activity">(12 часов назад)</span>
-              </p>
-              <p class="posts__comment">
-                Соседи будут рады!
-              </p>
-              <div class="posts__likes">НРАВИТСЯ: 666</div>
-            </div>
-          </li>
-          <li class="posts__item">
-            <div class="posts__img">
-              <img src="img/content/photo-window-mobile@1x.jpg" alt="" class="posts__img-self" width="280" height="180">
-            </div>
-            <div class="posts__body">
-              <p class="posts__author">
-                Борис
-                <span class="posts__user-activity">(20 часов назад)</span>
-              </p>
-              <p class="posts__comment">
-                Здесь могла быть ваша цитата о высоком и вечном.
-              </p>
-              <div class="posts__likes">НРАВИТСЯ: 215</div>
-            </div>
-          </li>
-          <li class="posts__item">
-            <div class="posts__img">
-              <img src="img/content/photo-fair-mobile@1x.jpg" alt="" class="posts__img-self" width="280" height="180">
-            </div>
-            <div class="posts__body">
-              <p class="posts__author">
-                Сергей
-                <span class="posts__user-activity">(25 часов назад)</span>
-              </p>
-              <p class="posts__comment">
-                Самая кубанская в мире!
-              </p>
-              <div class="posts__likes">НРАВИТСЯ: 4</div>
-            </div>
-          </li>
-          <li class="posts__item">
-            <div class="posts__img">
-              <img src="img/content/photo-pov-mobile@1x.jpg" alt="" class="posts__img-self" width="280" height="180">
-            </div>
-            <div class="posts__body">
-              <p class="posts__author">
-                Максим
-                <span class="posts__user-activity">(40 часов назад)</span>
-              </p>
-              <p class="posts__comment">
-                Где снег-то?
-              </p>
-              <div class="posts__likes">НРАВИТСЯ: 150</div>
-            </div>
-          </li>
-          <li class="posts__item">
-            <div class="posts__img">
-              <img src="img/content/photo-wing-mobile@1x.jpg" alt="" class="posts__img-self" width="280" height="180">
-            </div>
-            <div class="posts__body">
-              <p class="posts__author">
-                Надежда
-                <span class="posts__user-activity">(45 часов назад)</span>
-              </p>
-              <p class="posts__comment">Всем GM и взаимные лайки!</p>
-              <div class="posts__likes">НРАВИТСЯ: 2560</div>
-            </div>
-          </li>
-        </ul>
-        <div class="hook-small wrapper gallery__footer">
-          <p class="hook-small__text">
-            Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!
-          </p>
+        <div class="gallery__container">
+          <div class="hook-small wrapper gallery__subtitle">
+            <p class="hook-small__text">
+              Взгляните на фотографии, которые выкладывают пользователи!
+              Видите, как не хватает ваших?
+            </p>
+          </div>
+          <ul class="wrapper posts">
+            <li class="posts__item posts__item--daily">
+              <div class="posts__img">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/content/panorama-desktop@1x.jpg 1x, img/content/panorama-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/content/panorama-tablet@1x.jpg 1x, img/content/panorama-tablet@2x.jpg 2x">
+                  <img class="posts__img-self" src="img/content/panorama-mobile@1x.jpg" srcset="img/content/panorama-mobile@2x.jpg 2x" alt="" width="320" height="137">
+                </picture>
+                <div class="posts__pano-flag">Панорама дня</div>
+              </div>
+              <div class="posts__body">
+                <p class="posts__author">
+                  Анна
+                  <span class="posts__user-activity">(5 МИНУТ НАЗАД)</span>
+                </p>
+                <p class="posts__comment">
+                  Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+                </p>
+                <div class="likes posts__likes ">НРАВИТСЯ: 215</div>
+              </div>
+            </li>
+            <li class="posts__item">
+              <div class="posts__img">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/content/photo-car-desktop@1x.jpg 1x, img/content/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/content/photo-car-tablet@1x.jpg 1x, img/content/photo-car-tablet@2x.jpg 2x">
+                  <img class="posts__img-self" src="img/content/photo-car-mobile@1x.jpg" srcset="img/content/photo-car-mobile@2x.jpg 2x" alt="" width="280" height="180">
+                </picture>
+              </div>
+              <div class="posts__body">
+                <p class="posts__author">
+                  Левон
+                  <span class="posts__user-activity">(5 часов назад)</span>
+                </p>
+                <p class="posts__comment">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+                <div class="posts__likes">НРАВИТСЯ: 356</div>
+              </div>
+            </li>
+            <li class="posts__item">
+              <div class="posts__img">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/content/photo-drumset-desktop@1x.jpg 1x, img/content/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/content/photo-drumset-tablet@1x.jpg 1x, img/content/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="posts__img-self" src="img/content/photo-drumset-mobile@1x.jpg" srcset="img/content/photo-drumset-mobile@2x.jpg 2x" alt="" width="280" height="180">
+                </picture>
+              </div>
+              <div class="posts__body">
+                <p class="posts__author">
+                  Антон
+                  <span class="posts__user-activity">(12 часов назад)</span>
+                </p>
+                <p class="posts__comment">
+                  Соседи будут рады!
+                </p>
+                <div class="posts__likes">НРАВИТСЯ: 666</div>
+              </div>
+            </li>
+            <li class="posts__item">
+              <div class="posts__img">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/content/photo-window-desktop@1x.jpg 1x, img/content/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/content/photo-window-tablet@1x.jpg 1x, img/content/photo-window-tablet@2x.jpg 2x">
+                  <img class="posts__img-self" src="img/content/photo-window-mobile@1x.jpg" srcset="img/content/photo-window-mobile@2x.jpg 2x" alt="" width="280" height="180">
+                </picture>
+              </div>
+              <div class="posts__body">
+                <p class="posts__author">
+                  Борис
+                  <span class="posts__user-activity">(20 часов назад)</span>
+                </p>
+                <p class="posts__comment">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+                <div class="posts__likes">НРАВИТСЯ: 215</div>
+              </div>
+            </li>
+            <li class="posts__item">
+              <div class="posts__img">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/content/photo-fair-desktop@1x.jpg 1x, img/content/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/content/photo-fair-tablet@1x.jpg 1x, img/content/photo-fair-tablet@2x.jpg 2x">
+                  <img class="posts__img-self" src="img/content/photo-fair-mobile@1x.jpg" srcset="img/content/photo-fair-mobile@2x.jpg 2x" alt="" width="280" height="180">
+                </picture>
+              </div>
+              <div class="posts__body">
+                <p class="posts__author">
+                  Сергей
+                  <span class="posts__user-activity">(25 часов назад)</span>
+                </p>
+                <p class="posts__comment">
+                  Самая кубанская в мире!
+                </p>
+                <div class="posts__likes">НРАВИТСЯ: 4</div>
+              </div>
+            </li>
+            <li class="posts__item">
+              <div class="posts__img">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/content/photo-pov-desktop@1x.jpg 1x, img/content/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/content/photo-pov-tablet@1x.jpg 1x, img/content/photo-pov-tablet@2x.jpg 2x">
+                  <img class="posts__img-self" src="img/content/photo-pov-mobile@1x.jpg" srcset="img/content/photo-pov-mobile@2x.jpg 2x" alt="" width="280" height="180">
+                </picture>
+              </div>
+              <div class="posts__body">
+                <p class="posts__author">
+                  Максим
+                  <span class="posts__user-activity">(40 часов назад)</span>
+                </p>
+                <p class="posts__comment">
+                  Где снег-то?
+                </p>
+                <div class="posts__likes">НРАВИТСЯ: 150</div>
+              </div>
+            </li>
+            <li class="posts__item">
+              <div class="posts__img">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/content/photo-wing-desktop@1x.jpg 1x, img/content/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/content/photo-wing-tablet@1x.jpg 1x, img/content/photo-wing-tablet@2x.jpg 2x">
+                  <img class="posts__img-self" src="img/content/photo-wing-mobile@1x.jpg" srcset="img/content/photo-wing-mobile@2x.jpg 2x" alt="" width="280" height="180">
+                </picture>
+              </div>
+              <div class="posts__body">
+                <p class="posts__author">
+                  Надежда
+                  <span class="posts__user-activity">(45 часов назад)</span>
+                </p>
+                <p class="posts__comment">Всем GM и взаимные лайки!</p>
+                <div class="posts__likes">НРАВИТСЯ: 2560</div>
+              </div>
+            </li>
+          </ul>
+          <div class="hook-small gallery__footer">
+            <p class="hook-small__text">
+              Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!
+            </p>
+          </div>
         </div>
       </section>
       <section class="filter">
-        <div class="filter__img">
-          <img src="img/photo-road-mobile@1x.jpg" alt="" class="filter__img-self" width="280" height="374">
-        </div>
-        <div class="filter__body">
-          <div class="filter__modes">
-            <div class="filter__mode-container">
-              <div class="filter__mode filter__mode--crop" tabindex="-1">
-                <svg class="filter__icon filter__icon--crop filter__icon--active" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="44" height="44" viewBox="0 0 44 44" enable-background="new 0 0 44 44" xml:space="preserve">
-                  <path fill="none" d="M0,0h48v48H0V0z"/>
-                  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
-                </svg>
+        <div class="container filter__container">
+          <div class="filter__body">
+            <div class="filter__img">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source  media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <img class="filter__img-self" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@1x.jpg 2x" alt="" width="280" height="374">
+              </picture>
+            </div>
+            <div class="filter__controls">
+              <div class="filter__modes">
+                <div class="filter__mode-container">
+                  <div class="filter__mode filter__mode--crop" tabindex="-1">
+                    <svg class="filter__icon filter__icon--crop filter__icon--active" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="44" height="44" viewBox="0 0 44 44" enable-background="new 0 0 44 44" xml:space="preserve">
+                      <path fill="none" d="M0,0h48v48H0V0z"/>
+                      <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                    </svg>
+                  </div>
+                  <div class="range filter__range filter__range--crop">
+                    <div class="range__toggle"></div>
+                  </div>
+                </div>
+                <div class="filter__mode-container">
+                  <div class="filter__mode filter__mode--fill" tabindex="-1">
+                    <svg class="filter__icon filter__icon--fill" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48" height="43" viewBox="0 0 48 43" enable-background="new 0 0 48 43" xml:space="preserve">
+                      <path fill="none" d="M0,0h48v48H0V0z"/>
+                      <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                      <rect y="40" width="48" height="3"/>
+                    </svg>
+                  </div>
+                  <div class="range filter__range filter__range--fill">
+                    <div class="range__toggle"></div>
+                  </div>
+                </div>
+                <div class="filter__mode-container">
+                  <div class="filter__mode filter__mode--contrast" tabindex="-1">
+                    <svg class="filter__icon filter__icon--contrast" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32" height="32" viewBox="-35.422 -7.96 32 32" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                      <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                      <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                    </svg>
+                  </div>
+                  <div class="range filter__range filter__range--contrast">
+                    <div class="range__toggle"></div>
+                  </div>
+                </div>
               </div>
-              <div class="range filter__range filter__range--crop">
+              <div class="range filter__range filter__range--mobile">
                 <div class="range__toggle"></div>
               </div>
-            </div>
-            <div class="filter__mode-container">
-              <div class="filter__mode filter__mode--fill" tabindex="-1">
-                <svg class="filter__icon filter__icon--fill" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48" height="43" viewBox="0 0 48 43" enable-background="new 0 0 48 43" xml:space="preserve">
-                  <path fill="none" d="M0,0h48v48H0V0z"/>
-                  <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
-                  <rect y="40" width="48" height="3"/>
-                </svg>
-              </div>
-              <div class="range filter__range filter__range--fill">
-                <div class="range__toggle"></div>
+              <div class="filter__buttons">
+                <button class="button filter__btn filter__btn--submit">Запостить</button>
+                <button class="button filter__btn filter__btn--cancel">Отмена</button>
               </div>
             </div>
-            <div class="filter__mode-container">
-              <div class="filter__mode filter__mode--contrast" tabindex="-1">
-                <svg class="filter__icon filter__icon--contrast" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32" height="32" viewBox="-35.422 -7.96 32 32" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                  <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
-                  <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
-                </svg>
-              </div>
-              <div class="range filter__range filter__range--contrast">
-                <div class="range__toggle"></div>
-              </div>
-            </div>
-          </div>
-          <div class="range filter__range filter__range--mobile">
-            <div class="range__toggle"></div>
-          </div>
-          <div class="filter__buttons">
-            <button class="button filter__btn filter__btn--submit">Запостить</button>
-            <button class="button filter__btn filter__btn--cancel">Отмена</button>
           </div>
         </div>
       </section>

@@ -27,6 +27,11 @@
 @media (min-width: $desktop) {
   .title {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: -680px 0;
+    background-position: center top;
+  }
+  .title__self {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
   }
 }
