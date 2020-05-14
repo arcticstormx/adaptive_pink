@@ -363,10 +363,6 @@ a {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
-.wrapper {
-  padding-left: 20px;
-  padding-right: 20px; }
-
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -546,7 +542,7 @@ a {
 @media (min-width: 1200px) {
   .title {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-size: cover; } }
+    background-size: 2560px auto; } }
   @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
     .title {
       background-image: url("../img/bg-back-desktop@2x.jpg"); } }
@@ -555,7 +551,7 @@ a {
   .title__self {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px; } }
+    max-width: 1200px; } }
 
 .text-item {
   display: -webkit-box;
@@ -2141,8 +2137,11 @@ a {
   .main-form__title {
     padding: 173px 200px 101px; }
   .main-form__subtitle {
-    padding-left: 200px;
-    padding-right: 200px; }
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 160px;
+    padding-right: 160px;
+    width: 1200px; }
   .main-form__extra-hook {
     display: inline; }
   .main-form__form {
@@ -2152,8 +2151,11 @@ a {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 130px;
-    padding-right: 130px; } }
+    padding-right: 130px;
+    width: 1200px; } }
 
 .gallery__title {
   padding-top: 96px;
@@ -2375,12 +2377,18 @@ a {
 
 @media (min-width: 1200px) {
   .posts {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-left: 130px;
     padding-right: 130px; }
   .posts__item {
     margin-bottom: 51px; }
   .posts__item--daily .posts__img {
     height: 506px; }
+  .posts__item--daily .posts__body {
+    margin-left: 0;
+    margin-right: 0; }
   .posts__img-self {
     width: 300px;
     height: 400px; }
@@ -2388,7 +2396,8 @@ a {
     min-width: 1200px;
     height: 506px; }
   .posts__pano-flag {
-    top: 54px; } }
+    top: 54px;
+    right: 0; } }
 
 .form__fieldset {
   display: -webkit-box;

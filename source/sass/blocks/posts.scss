@@ -185,6 +185,7 @@
 }
 @media (min-width: $desktop) {
   .posts {
+    justify-content: space-between;
     padding-left: 130px;
     padding-right: 130px;
   }
@@ -193,6 +194,10 @@
   }
   .posts__item--daily .posts__img {
     height: 506px;
+  }
+  .posts__item--daily .posts__body {
+    margin-left: 0;
+    margin-right: 0;
   }
   .posts__img-self {
     width: 300px;
@@ -204,7 +209,7 @@
   }
   .posts__pano-flag {
     top: 54px;
+    right: 0;
   }
-  .posts__item--daily .posts__body {
-  }
+
 }
