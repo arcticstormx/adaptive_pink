@@ -38,16 +38,15 @@
 
 @media (min-width: $tablet) {
   .features {
-    align-items: flex-start;
     background-image: url("../img/iphone-screen-3-tablet@1x.png"),
     url("../img/bg-triangle-white.svg");
-    background-position: 20px 4px, 0 0;
-    background-size: auto, 100%;
+    background-position: calc(50% - 175px) 8px, 0 0;
+    background-size: 265px auto, 100%;
   }
 
   .features__item {
-    margin-left: 310px;
-    margin-bottom:  37px;
+    margin-left: 49.9%;;
+    margin-bottom: 37px;
     text-align: left;
   }
 }

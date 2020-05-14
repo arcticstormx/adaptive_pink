@@ -111,15 +111,15 @@
   height: 729px;
   background-image: url("../img/iphone-hand-tablet@1x.png"),
   url("../img/bg-back-tablet@1x.jpg");
-  background-position: -21px 184px, -270px 0;
-  background-size: auto, auto;
+  background-position: calc(50% - 3px) 184px, center top;
+  background-size: 700px auto, 1200px auto;
   background-repeat: no-repeat;
   }
 
   .promo__body {
     position: absolute;
     top: 202px;
-    left: 20px;
+    left: calc(50% - 310px);
 
     padding: 0;
     width: 300px;

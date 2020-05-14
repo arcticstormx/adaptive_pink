@@ -42,6 +42,7 @@
 
   background-image: url("../img/icon-yes.svg");
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -56,6 +57,7 @@
 
   background-image: url("../img/icon-no.svg");
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -140,11 +142,11 @@
   }
   .price-table__tdata--checked::before {
     top: 10px;
-    right: 57px;
+    right: calc(50% - 17px);
   }
   .price-table__tdata--crossed::before {
     top: 9px;
-    right: 62px;
+    right: calc(50% - 15px);
   }
   .price-table__tdata--tablet {
     display: table-cell;

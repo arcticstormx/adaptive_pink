@@ -978,13 +978,13 @@ a {
   .promo__background {
     height: 729px;
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-    background-position: -21px 184px, -270px 0;
-    background-size: auto, auto;
+    background-position: calc(50% - 3px) 184px, center top;
+    background-size: 700px auto, 1200px auto;
     background-repeat: no-repeat; }
   .promo__body {
     position: absolute;
     top: 202px;
-    left: 20px;
+    left: calc(50% - 310px);
     padding: 0;
     width: 300px;
     height: 450px;
@@ -1145,14 +1145,11 @@ a {
 
 @media (min-width: 660px) {
   .features {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     background-image: url("../img/iphone-screen-3-tablet@1x.png"), url("../img/bg-triangle-white.svg");
-    background-position: 20px 4px, 0 0;
-    background-size: auto, 100%; }
+    background-position: calc(50% - 175px) 8px, 0 0;
+    background-size: 265px auto, 100%; }
   .features__item {
-    margin-left: 310px;
+    margin-left: 49.9%;
     margin-bottom: 37px;
     text-align: left; } }
 
@@ -1284,7 +1281,8 @@ a {
       margin-right: auto;
       margin-left: auto;
       padding-left: 20px;
-      padding-right: 20px; }
+      padding-right: 20px;
+      max-width: 890px; }
     .reviews__item-header {
       margin-bottom: 6px;
       font-size: 20px; }
@@ -1395,11 +1393,13 @@ a {
 @media (min-width: 660px) {
   .packages {
     padding-top: 88px;
-    padding-bottom: 25px; }
+    padding-bottom: 70px; }
     .packages__container {
       padding-left: 20px;
       padding-right: 20px; }
     .packages__slider {
+      margin-bottom: 0;
+      height: auto;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
@@ -1464,6 +1464,7 @@ a {
   height: 21px;
   background-image: url("../img/icon-yes.svg");
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat; }
 
 .price-table__tdata--crossed::before {
@@ -1475,6 +1476,7 @@ a {
   height: 26px;
   background-image: url("../img/icon-no.svg");
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat; }
 
 .price-table__head {
@@ -1546,10 +1548,10 @@ a {
     left: 7px; }
   .price-table__tdata--checked::before {
     top: 10px;
-    right: 57px; }
+    right: calc(50% - 17px); }
   .price-table__tdata--crossed::before {
     top: 9px;
-    right: 62px; }
+    right: calc(50% - 15px); }
   .price-table__tdata--tablet {
     display: table-cell; }
   .price-table__product--mobile {
@@ -2773,7 +2775,8 @@ a {
       margin-right: auto;
       margin-left: auto;
       padding-left: 20px;
-      padding-right: 20px; }
+      padding-right: 20px;
+      max-width: 890px; }
     .research__img {
       position: relative;
       display: -webkit-box;
