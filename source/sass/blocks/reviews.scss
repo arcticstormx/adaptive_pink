@@ -6,6 +6,8 @@
 .reviews__container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
 }
 
 .reviews__list {
@@ -48,6 +50,12 @@
   .reviews {
     padding-top: 99px;
     padding-bottom: 20px;
+    .reviews__container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
     &__list {
     }
     &__item {

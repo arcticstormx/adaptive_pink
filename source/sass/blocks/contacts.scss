@@ -86,6 +86,9 @@
 
 .contacts__map-img {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
   width: 320px;
 }
 
@@ -147,7 +150,7 @@
     }
     &__map-img {
       top: -346px;
-      left: -20px;
+      left: 0;
       width: 700px;
     }
     &__map-marker {

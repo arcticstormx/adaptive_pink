@@ -10,30 +10,34 @@
 .posts__img {
   position: relative;
   display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .posts__item--daily .posts__img {
-  height: 137px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .posts__img-self {
-  width: 280px;
-  height: auto;
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.posts__item picture {
+  width: 100%;
 }
 
 .posts__item--daily .posts__img-self {
-  position: absolute;
-  top: 0;
-  left: -20px;
-  max-width: none;
-  width: 320px;
-  height: 137px;
+  width: 100vw;
 }
+
 
 .posts__pano-flag {
   position: absolute;
   top: 0;
-  left: 140px;
+  right: 20px;
   padding: 12px 0;
   width: 140px;
   height: 36px;
@@ -48,6 +52,8 @@
 }
 
 .posts__body {
+  margin-left: 20px;
+  margin-right: 20px;
   padding: 18px 18px 20px;
   font-size: 14px;
   line-height: 24px;

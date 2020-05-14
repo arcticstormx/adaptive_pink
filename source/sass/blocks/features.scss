@@ -1,4 +1,7 @@
 .features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #f2f2f2;
   background-image: url("../img/iphone-screen-mobile@1x.png"),
   url("../img/bg-triangle-white.svg");
@@ -9,6 +12,7 @@
 
 .features__item {
   margin-bottom: 35px;
+  max-width: 430px;
   text-align: center;
 }
 
@@ -34,6 +38,7 @@
 
 @media (min-width: $tablet) {
   .features {
+    align-items: flex-start;
     background-image: url("../img/iphone-screen-3-tablet@1x.png"),
     url("../img/bg-triangle-white.svg");
     background-position: 20px 4px, 0 0;
@@ -64,6 +69,7 @@
     margin-bottom: 0;
     padding-top: 275px;
     width: 300px;
+    max-width: auto;
     text-align: center;
   }
   .features__item:last-child {
