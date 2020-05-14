@@ -42,6 +42,10 @@
     url("../img/bg-triangle-white.svg");
     background-position: calc(50% - 175px) 8px, 0 0;
     background-size: 265px auto, 100%;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-screen-3-tablet@2x.png"),
+    url("../img/bg-triangle-white.svg");
+    }
   }
 
   .features__item {
@@ -58,7 +62,8 @@
     justify-content: space-between;
     padding-left: 130px;
     padding-right: 130px;
-    background-image: none, url("../img/bg-triangle-white.svg");
+    background-image: none;
+    background-color: transparent;
   }
   .features__item {
     position: relative;

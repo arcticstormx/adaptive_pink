@@ -36,6 +36,11 @@
 
 @media (min-width: $desktop) {
   .app {
+    background-image: url("../img/bg-triangle-white.svg"),
+    linear-gradient(#fff, #fff 35.3%, #f2f2f2 35.3%, #f2f2f2 100%);
+    background-size: 100% 92px, auto;
+    background-repeat: no-repeat;
+    background-position: 0 326px, 0 0;
   }
   .app__container {
     margin-left: auto;

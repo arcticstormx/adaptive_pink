@@ -199,8 +199,7 @@
     height: 400px;
   }
   .posts__item--daily .posts__img-self {
-    left: -130px;
-    width: 1200px;
+    min-width: 1200px;
     height: 506px;
   }
   .posts__pano-flag {

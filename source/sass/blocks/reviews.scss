@@ -50,7 +50,7 @@
   .reviews {
     padding-top: 99px;
     padding-bottom: 20px;
-    .reviews__container {
+    &__container {
       margin-right: auto;
       margin-left: auto;
       padding-left: 20px;
@@ -90,15 +90,15 @@
     margin-right: auto;
     padding-top: 186px;
     padding-bottom: 20px;
-    padding-left: 255px;
-    padding-right: 255px;
+    padding-left: 70px;
+    padding-right: 70px;
     width: 1200px;
   }
   .reviews__container::before {
     content: '';
     position: absolute;
     top: 70px;
-    left: 564px;
+    left: calc(50% - 39.5px);
 
     width: 79px;
     height: 63px;
@@ -144,11 +144,11 @@
     border-color: rgba(40, 54, 69, 0.1);;
   }
   .reviews__arrow--prev {
-    left: 135px;
+    left: -20px;
     transform: rotate(135deg);
   }
   .reviews__arrow--next {
-    right: 135px;
+    right: -20px;
     transform: rotate(-45deg);
   }
 

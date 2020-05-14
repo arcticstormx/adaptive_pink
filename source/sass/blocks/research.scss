@@ -69,6 +69,7 @@
 @media (min-width: $desktop) {
   .research {
     padding-top: 0;
+    background-color: #f2f2f2;
   }
   .research__container {
     margin-left: auto;
@@ -78,7 +79,7 @@
     padding-left: 130px;
     padding-right: 130px;
     width: 1200px;
-    background-color: #f2f2f2;
+    max-width: none;
   }
   .research__img {
     margin-right: 67px;
