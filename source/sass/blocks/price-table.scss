@@ -3,8 +3,6 @@
   top: 0;
   left: 50%;
   margin-left: -417px;
-  // margin-left: 20px;
-  // margin-right: 20px;
   height: 281px;
   width: 834px;
   table-layout: fixed;
@@ -109,7 +107,9 @@
 
 @media (min-width: $tablet) {
   .price-table {
-    left: 0;
+    position: relative;
+    left: auto;
+    top: auto;
     margin-left: 0;
     margin-right: 0;
     width: 620px;

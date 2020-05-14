@@ -1,8 +1,12 @@
 .title {
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 0 0;
+  background-position: center top;
+  background-size: 700px auto;
   background-repeat: no-repeat;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .title__self {
@@ -17,7 +21,10 @@
 @media (min-width: $tablet) {
   .title {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: -271px 0;
+    background-size: 1200px auto;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
   .title__self {
     font-size: 50px;
@@ -27,7 +34,11 @@
 @media (min-width: $desktop) {
   .title {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center top;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
   .title__self {
     margin-left: auto;

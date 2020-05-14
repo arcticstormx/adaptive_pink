@@ -27,12 +27,14 @@
 
 .posts__item picture {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .posts__item--daily .posts__img-self {
   width: 100vw;
+  height: auto;
 }
-
 
 .posts__pano-flag {
   position: absolute;
@@ -103,7 +105,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .posts__item {
@@ -115,37 +117,40 @@
     width: 100%;
   }
 
-  .posts__item--daily .posts__img {
-    height: 509px;
+  .posts__img {
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
   }
-
   .posts__img-self {
     width: 300px;
     height: 300px;
   }
 
   .posts__item--daily .posts__img-self {
-    width: 700px;
-    height: 509px;
+    display: flex;
+    justify-content: center;
+    min-width: 700px;
   }
 
   .posts__pano-flag {
     top: 57px;
-    left: auto;
-    right: 0;
   }
 
   .posts__body {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: auto;
+    margin-left: 0;
+    margin-right: 0;
     padding: 23px 27px 23px;
     height: 155px;
   }
 
   .posts__item--daily .posts__body {
     padding-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
     height: auto;
   }
 
@@ -158,10 +163,8 @@
   }
 
   .posts__likes::before {
-   top: auto;
-   bottom: 29px;
    left: auto;
-   right: 32px
+   right: 5px
   }
 
   .posts__item--daily .posts__likes {
