@@ -1013,8 +1013,13 @@ a {
     height: 853px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-size: 2560px auto;
+    background-repeat: no-repeat; } }
+  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+    .promo {
+      background-image: url("../img/bg-back-desktop@2x.jpg"); } }
+
+@media (min-width: 1200px) {
   .promo__container {
     position: relative;
     margin-left: auto;
@@ -1024,8 +1029,13 @@ a {
     height: 853px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: 148px bottom;
-    background-size: auto;
-    background-repeat: no-repeat; }
+    background-size: 1050px auto;
+    background-repeat: no-repeat; } }
+  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+    .promo__background {
+      background-image: url("../img/iphone-hand-desktop@2x.png"); } }
+
+@media (min-width: 1200px) {
   .promo__body {
     top: 218px;
     left: 130px;
@@ -1198,39 +1208,41 @@ a {
     text-align: center; }
   .features__item:last-child {
     margin-right: 0; }
-  .features__item--1::before {
+  .features__item::before {
     content: '';
     position: absolute;
+    width: 294px;
+    height: 382px;
+    background-repeat: no-repeat;
+    background-size: 294px auto;
+    background-position: 0 0; }
+  .features__item--1::before {
     top: -84px;
     left: 3px;
-    width: 294px;
-    height: 382px;
-    background-image: url("../img/iphone-screen-1-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0 0; }
+    background-image: url("../img/iphone-screen-1-desktop@1x.png"); } }
+  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+    .features__item--1::before {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png"); } }
+
+@media (min-width: 1200px) {
   .features__item--2::before {
-    content: '';
-    position: absolute;
     top: -84px;
     left: 6px;
-    width: 294px;
-    height: 382px;
-    background-image: url("../img/iphone-screen-2-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0 0; }
+    background-image: url("../img/iphone-screen-2-desktop@1x.png"); } }
+  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+    .features__item--2::before {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png"); } }
+
+@media (min-width: 1200px) {
   .features__item--3::before {
-    content: '';
-    position: absolute;
     top: -84px;
     left: 6px;
-    width: 294px;
-    height: 382px;
-    background-image: url("../img/iphone-screen-3-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0 0; }
+    background-image: url("../img/iphone-screen-3-desktop@1x.png"); } }
+  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+    .features__item--3::before {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png"); } }
+
+@media (min-width: 1200px) {
   .features__item-title {
     margin-bottom: 26px;
     padding-left: 20px;
@@ -2105,7 +2117,9 @@ a {
 
 .main-form__subtitle {
   padding-top: 45px;
-  padding-bottom: 34px; }
+  padding-bottom: 34px;
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .main-form__extra-hook {
   display: none; }
@@ -3073,5 +3087,122 @@ a {
     margin-right: 61px; }
   .footer__social--index {
     margin-right: 69px; } }
+
+.modal-wrap {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%; }
+
+.modal {
+  z-index: 100;
+  width: 100vw;
+  max-width: 460px;
+  text-align: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15); }
+
+.modal__message {
+  padding-top: 41px;
+  padding-bottom: 38px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.modal__header {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000; }
+
+.modal__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645; }
+
+.modal__btn {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.modal__btn-self {
+  margin-left: auto;
+  margin-right: auto;
+  height: 63px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #2aab6d;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: none; }
+
+.popup-failure {
+  display: none;
+  padding-bottom: 50px; }
+
+.popup-failure__header {
+  margin-bottom: 25px; }
+
+.popup-success {
+  display: none; }
+
+.popup-success__header {
+  margin-bottom: 25px; }
+
+.popup-success__btn {
+  padding-top: 48px;
+  padding-bottom: 52px;
+  background-color: #f2f2f2; }
+
+@media (min-width: 660px) {
+  .modal {
+    border-radius: 5px;
+    width: 460px; }
+  .modal__message {
+    padding-top: 35px;
+    padding-left: 70px;
+    padding-right: 70px; }
+  .modal__header {
+    font-size: 30px;
+    line-height: 40px; }
+  .modal__text {
+    font-size: 18px; }
+  .modal__btn {
+    padding-left: 80px;
+    padding-right: 80px; }
+  .modal__btn-self {
+    width: 300px; }
+  .popup-success__message {
+    padding-bottom: 31px; }
+  .popup-failure__message {
+    padding-bottom: 36px; }
+  .popup-failure__header {
+    padding-left: 30px;
+    padding-right: 30px; } }
+
+@media (min-width: 1200px) {
+  .popup-success {
+    width: 780px;
+    max-width: none; }
+  .popup-success__message {
+    padding-top: 41px;
+    padding-bottom: 36px; }
+  .popup-success__text {
+    padding-left: 90px;
+    padding-right: 90px; }
+  .popup-success__btn-self {
+    width: 460px; } }
 
 /*# sourceMappingURL=style.css.map */
