@@ -2507,11 +2507,11 @@ a {
 .form__container--contacts .form__legend {
   display: none; }
 
-.form__platforms-container {
+.form__container--platforms {
   padding-top: 38px;
   background-color: #f2f2f2; }
 
-.form-platforms {
+.form__container--platforms .form__fieldset {
   padding-top: 36px;
   padding-bottom: 5px; }
 
@@ -2631,16 +2631,16 @@ a {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1; }
-  .form__platforms-container {
+  .form__container--platforms {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     padding-top: 0;
     background-color: transparent; }
-  .form-platforms {
+  .form__container--platforms .form__fieldset {
     padding-top: 8px;
     padding-bottom: 18px; }
-  .form-platforms__legend {
+  .form__container--platforms .form__legend {
     margin-bottom: 36px; }
   .form__review-container {
     -webkit-box-ordinal-group: 6;
@@ -2686,15 +2686,15 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: 164px; }
-  .form-platforms {
+  .form__container--platforms .form__fieldset {
     padding-left: 20px;
     padding-right: 20px;
     width: 435px; }
-  .form-platforms__legend {
+  .form__container--platforms .form__legend {
     margin-bottom: 38px;
     padding-left: 25px;
     padding-right: 25px; }
-  .form-platforms__item {
+  .form__container--platforms .radio-item {
     margin-left: 54px; }
   .form__container--contacts .form__fieldset {
     padding-top: 33px;
