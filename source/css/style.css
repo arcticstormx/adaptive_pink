@@ -527,8 +527,7 @@ a {
   line-height: 1.2;
   font-weight: 300;
   color: #ffffff;
-  text-align: center;
-  font-weight: 300; }
+  text-align: center; }
 
 @media (min-width: 660px) {
   .title {
