@@ -9,7 +9,7 @@
 
 .contacts__address {
   padding-bottom: 38px;
-  font-style: normal
+  font-style: normal;
 }
 
 .contacts__item {
@@ -26,10 +26,6 @@
   margin-bottom: 25px;
 }
 
-.contacts__item--address {
-
-}
-
 .contacts__item-name {
   font-size: 18px;
   line-height: 1.2;
@@ -43,9 +39,11 @@
   font-weight: 300;
   color: #d22856;
 }
+
 .contacts__info--email {
   margin-top: 4px;
 }
+
 .contacts__info--email:hover,
 .contacts__info--email:focus {
   color: #283645;
@@ -70,7 +68,7 @@
 
 .contacts__map::before {
   z-index: 10;
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -93,7 +91,7 @@
 }
 
 .contacts__map::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 69px;
   left: 50%;
@@ -116,44 +114,46 @@
       padding-left: 100px;
       padding-right: 100px;
     }
+
     &__address {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       padding-bottom: 27px;
     }
+
     &__item {
       width: 50%;
       margin-bottom: 48px;
     }
+
     &__item:last-child {
       margin-bottom: 0;
       padding-left: 180px;
       padding-right: 180px;
       width: 100%;
-
     }
+
     &__item-name {
       margin-bottom: 5px;
       font-size: 18px;
     }
-    &__info {
-    }
+
     &__info--address {
       margin-top: 0;
     }
+
     &__map {
       height: 373px;
     }
+
     &__map::after {
       bottom: 143px;
     }
+
     &__map-img {
       top: -346px;
       width: 700px;
-    }
-    &__map-marker {
-
     }
   }
 }
@@ -164,43 +164,53 @@
     margin-right: auto;
     width: 1200px;
   }
+
   .contacts__hook {
     padding-top: 64px;
     padding-bottom: 58px;
     padding-left: 250px;
     padding-right: 250px;
   }
+
   .contacts__address {
     flex-wrap: nowrap;
     padding-bottom: 0;
     padding-right: 130px;
     padding-left: 130px;
   }
+
   .contacts__item {
     margin-bottom: 0;
     width: 33%;
   }
+
   .contacts__item:last-child {
     margin-bottom: 0;
     padding-left: 0;
     padding-right: 0;
     width: auto;
   }
+
   .contacts__item--tel {
     order: 1;
   }
+
   .contacts__item--email {
     order: 3;
   }
+
   .contacts__item--address {
     order: 2;
   }
+
   .contacts__item-name {
     margin-bottom: 25px;
   }
+
   .contacts__map {
     height: 522px;
   }
+
   .contacts__map::before {
     top: 0;
     left: -118px;
@@ -208,9 +218,11 @@
     height: 123px;
     background-size: 1439px 123px;
   }
+
   .contacts__map::after {
     bottom: 203px;
   }
+
   .contacts__map-img {
     top: -256px;
     width: 1200px;

@@ -22,7 +22,6 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-
   }
 }
 
@@ -38,7 +37,7 @@
 }
 
 .promo__body::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -286px;
   left: 0;
@@ -51,7 +50,6 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png");
-
   }
 }
 
@@ -69,12 +67,12 @@
 
 .promo__download-btn:hover,
 .promo__download-btn:focus {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #d22856;
 }
 
 .promo__download-btn:active {
-  background: #fff;
+  background: #ffffff;
   color: rgba(210, 40, 86, 0.3);
 }
 
@@ -84,7 +82,7 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
-  color: #fff;
+  color: #ffffff;
 
   text-align: center;
 }
@@ -108,15 +106,16 @@
   }
 
   .promo__background {
-  height: 729px;
-  background-image: url("../img/iphone-hand-tablet@1x.png"),
-  url("../img/bg-back-tablet@1x.jpg");
-  background-position: calc(50% - 3px) 184px, center top;
-  background-size: 700px auto, 1200px auto;
-  background-repeat: no-repeat;
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/iphone-hand-tablet@2x.png"),
-    url("../img/bg-back-tablet@2x.jpg");
+    height: 729px;
+    background-image: url("../img/iphone-hand-tablet@1x.png"),
+      url("../img/bg-back-tablet@1x.jpg");
+    background-position: calc(50% - 3px) 184px, center top;
+    background-size: 700px auto, 1200px auto;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png"),
+        url("../img/bg-back-tablet@2x.jpg");
     }
   }
 
@@ -143,8 +142,8 @@
     padding-right: 40px;
   }
 
-  .promo__hook .hook__text{
-    color: #fff;
+  .promo__hook .hook__text {
+    color: #ffffff;
   }
 
   .promo__download-btn {
@@ -168,24 +167,28 @@
     background-position: center;
     background-size: 2560px auto;
     background-repeat: no-repeat;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
+
   .promo__container {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
   }
+
   .promo__background {
     height: 853px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: 148px bottom;
     background-size: 1050px auto;
     background-repeat: no-repeat;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-image: url("../img/iphone-hand-desktop@2x.png");
     }
   }
 
@@ -194,13 +197,16 @@
     left: 130px;
     height: auto;
   }
+
   .promo__hook {
     margin-bottom: 52px;
   }
+
   .promo__download-btn {
     font-size: 21px;
     margin-bottom: 67px;
   }
+
   .promo__platforms {
     margin-bottom: 56px;
   }

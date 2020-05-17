@@ -37,15 +37,18 @@
   .packages {
     padding-top: 88px;
     padding-bottom: 70px;
+
     &__container {
       padding-left: 20px;
       padding-right: 20px;
     }
+
     &__slider {
       margin-bottom: 0;
       height: auto;
       justify-content: center;
     }
+
     &__controls {
       display: none;
     }
@@ -62,6 +65,7 @@
     background-size: 100% 83px;
     background-repeat: no-repeat;
   }
+
   .packages__container {
     margin-left: auto;
     margin-right: auto;

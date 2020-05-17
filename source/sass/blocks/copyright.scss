@@ -28,16 +28,16 @@
 
 @media (min-width: $tablet) {
   .copyright {
-
     &__text {
       margin-right: 15px;
     }
+
     &__link {
       margin-top: 2px;
     }
   }
-
 }
+
 @media (min-width: $desktop) {
   .copyright__text {
     font-size: 18px;

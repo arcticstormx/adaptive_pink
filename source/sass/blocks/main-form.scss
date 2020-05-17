@@ -21,30 +21,35 @@
   .main-form {
     margin-bottom: 49px;
   }
+
   .main-form__title {
     padding: 180px 20px 80px;
   }
+
   .main-form__subtitle {
     padding-top: 93px;
     padding-bottom: 71px;
     padding-left: 50px;
     padding-right: 50px;
   }
+
   .main-form__extra-hook {
     display: block;
   }
+
   .main-form__form {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
     padding-right: 20px;
   }
-
 }
+
 @media (min-width: $desktop) {
   .main-form__title {
     padding: 173px 200px 101px;
   }
+
   .main-form__subtitle {
     margin-left: auto;
     margin-right: auto;
@@ -52,9 +57,11 @@
     padding-right: 160px;
     width: 1200px;
   }
+
   .main-form__extra-hook {
     display: inline;
   }
+
   .main-form__form {
     flex-direction: row;
     flex-wrap: wrap;

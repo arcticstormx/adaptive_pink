@@ -37,20 +37,23 @@
 @media (min-width: $desktop) {
   .app {
     background-image: url("../img/bg-triangle-white.svg"),
-    linear-gradient(#fff, #fff 35.3%, #f2f2f2 35.3%, #f2f2f2 100%);
+      linear-gradient(#ffffff, #ffffff 35.3%, #f2f2f2 35.3%, #f2f2f2 100%);
     background-size: 100% 92px, auto;
     background-repeat: no-repeat;
     background-position: 0 326px, 0 0;
   }
+
   .app__container {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
   }
+
   .app__intro {
     padding-top: 68px;
     padding-bottom: 78px;
   }
+
   .app__intro .hook__text:last-child {
     padding-left: 340px;
     padding-right: 340px;

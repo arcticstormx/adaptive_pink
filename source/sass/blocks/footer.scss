@@ -34,34 +34,34 @@
 
 @media (min-width: $tablet) {
   .footer {
-    background-color: #fff;
+    background-color: #ffffff;
     padding-bottom: 37px;
-  &--index {
-    display: flex;
-  }
-  &__container {
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  &__logo {
-    margin-top: -5px;
-    margin-right: 77px;
-    margin-bottom: 0;
-  }
-  &__logo-self {
-  }
-  &__social {
-    margin-right: 93px;
-    margin-bottom: 0;
-  }
-  &__copyright {
-  }
-}
 
+    &--index {
+      display: flex;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &__logo {
+      margin-top: -5px;
+      margin-right: 77px;
+      margin-bottom: 0;
+    }
+
+
+    &__social {
+      margin-right: 93px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media (min-width: $desktop) {
@@ -69,9 +69,11 @@
     padding-top: 25px;
     padding-bottom: 72px;
   }
+
   .footer--index {
     padding-top: 75px;
   }
+
   .footer__container {
     justify-content: space-between;
     margin-left: auto;
@@ -80,15 +82,19 @@
     padding-right: 130px;
     width: 1200px;
   }
+
   .footer__logo-self--mobile {
     display: none;
   }
+
   .footer__logo-self--desktop {
     display: flex;
   }
+
   .footer__social {
     margin-right: 61px;
   }
+
   .footer__social--index {
     margin-right: 69px;
   }

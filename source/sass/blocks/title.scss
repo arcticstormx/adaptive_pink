@@ -13,7 +13,7 @@
   font-size: 24px;
   line-height: 1.2;
   font-weight: 300;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   font-weight: 300;
 }
@@ -22,10 +22,12 @@
   .title {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: 1200px auto;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
+
   .title__self {
     font-size: 50px;
   }
@@ -40,6 +42,7 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
+
   .title__self {
     margin-left: auto;
     margin-right: auto;

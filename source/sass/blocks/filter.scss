@@ -1,6 +1,5 @@
 .filter {
   background-color: #f2f2f2;
-
 }
 
 .filter__img {
@@ -44,9 +43,11 @@
 .filter__icon {
   fill: #b5b9be;
 }
+
 .filter__icon:hover {
   fill: #8d949b;
 }
+
 .filter__icon--crop {
   width: 44px;
   height: 44px;
@@ -100,16 +101,19 @@
 
 .filter__btn--submit:hover,
 .filter__btn--submit:focus {
-  color: #fff;
+  color: #ffffff;
   background-color: #d22856;
 }
+
 .filter__btn--submit:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
 .filter__btn--cancel {
   color: rgba(40, 54, 69, 0.1);
   border-color: rgba(40, 54, 69, 0.1);
 }
+
 .filter__btn--cancel:hover,
 .filter__btn--cancel:focus {
   color: rgba(40, 54, 69, 0.3);
@@ -194,6 +198,7 @@
   .filter__icon {
     fill: #d22856;
   }
+
   .filter__icon:hover {
     fill: #d22856;
   }
@@ -258,6 +263,7 @@
     padding: 0;
     background-color: transparent;
   }
+
   .filter__container {
     margin-left: auto;
     margin-right: auto;
@@ -265,6 +271,7 @@
     padding-right: 130px;
     width: 1200px;
   }
+
   .filter__body {
     padding-top: 57px;
     padding-bottom: 57px;
@@ -272,17 +279,19 @@
     padding-right: 60px;
     background-color: #f2f2f2;
   }
+
   .filter__img {
     margin-right: 90px;
   }
-  .filter__img-self {
-  }
+
   .filter__controls {
     flex-grow: 1;
   }
+
   .filter__modes {
     margin-bottom: 148px;
   }
+
   .filter__mode-container {
     padding: 0;
     padding-bottom: 14px;
@@ -290,56 +299,71 @@
     margin: 0;
     margin-bottom: 11px;
   }
+
   .filter__mode-container:last-child {
     padding-bottom: 18px;
   }
+
   .filter__mode {
     height: auto;
   }
+
   .filter__mode--crop {
     margin-top: -3px;
   }
+
   .filter__mode--contrast {
-    padding-top: 7px
+    padding-top: 7px;
   }
+
   .filter__icon--crop {
     width: 44px;
     height: 44px;
   }
+
   .filter__icon--fill {
     width: 48px;
     height: 43px;
   }
+
   .filter__icon--contrast {
     width: 32px;
     height: 32px;
   }
+
   .filter__range {
     margin-top: 25px;
     width: 288px;
   }
+
   .filter__range--crop {
     margin-top: 18px;
   }
+
   .filter__range--crop .range__toggle {
     left: 71px;
   }
+
   .filter__range--fill .range__toggle {
     left: 247px;
   }
+
   .filter__range--contrast .range__toggle {
     left: 160px;
   }
+
   .filter__buttons {
     display: flex;
     flex-direction: row;
     padding-left: 0;
   }
+
   .filter__btn {
     margin-bottom: 0;
     margin-right: 44px;
     width: 183px;
   }
+
   .filter__btn:last-child {
     margin-right: 0;
   }

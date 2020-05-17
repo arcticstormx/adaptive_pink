@@ -40,9 +40,11 @@
 .text-item__input:focus {
   border-color: #283645;
 }
+
 .text-item__input:active {
   border-color: #d22856;
 }
+
 .text-item__input::placeholder {
   color: #283645;
   font-family: inherit;
@@ -52,6 +54,7 @@
   .text-item {
     flex-direction: row;
     margin-bottom: 52px;
+
     &__label {
       margin-bottom: 0;
       margin-right: 19px;
@@ -59,10 +62,10 @@
       padding-bottom: 16.5px;
       padding-left: 0;
     }
+
     &__input {
       padding-left: 18px;
       flex-grow: 1;
     }
   }
-
 }

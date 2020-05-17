@@ -22,36 +22,43 @@
     padding-top: 181px;
     padding-bottom: 139px;
   }
+
   .gallery__subtitle {
     padding-top: 92px;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 77px;
   }
+
   .gallery__footer {
     padding-top: 45px;
     padding-bottom: 70px;
   }
 }
+
 @media (min-width: $desktop) {
   .gallery__title {
     padding-top: 173px;
     padding-bottom: 101px;
   }
+
   .gallery__title-self {
     padding-left: 300px;
     padding-right: 300px;
   }
+
   .gallery__container {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
   }
+
   .gallery__subtitle {
     padding-bottom: 89px;
     padding-left: 280px;
     padding-right: 280px;
   }
+
   .gallery__footer {
     padding-top: 10px;
     padding-bottom: 66px;

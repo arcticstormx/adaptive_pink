@@ -19,7 +19,7 @@
   height: 50px;
   border: 2px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .social__link:hover,
@@ -30,12 +30,13 @@
 .social__link:active {
   border-color: rgba(40, 54, 69, 0.1);
 }
+
 .social__link:active::before {
   opacity: 0.3;
 }
 
 .social__link--twitter::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 16px;
   left: 14px;
@@ -47,7 +48,7 @@
 }
 
 .social__link--facebook::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 12px;
   left: 18px;
@@ -60,7 +61,7 @@
 }
 
 .social__link--youtube::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 15px;
   left: 17px;

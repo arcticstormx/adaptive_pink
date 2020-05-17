@@ -1,6 +1,6 @@
- .research {
+.research {
   display: none;
- }
+}
 
 @media (min-width: $tablet) {
   .research {
@@ -16,6 +16,7 @@
       padding-right: 20px;
       max-width: 890px;
     }
+
     &__img {
       position: relative;
       display: flex;
@@ -27,10 +28,11 @@
 
       background-image: url("../img/icon-editor-diagram-fill.svg"),
         url("../img/icon-timer.svg");
-      background-position: 19px 55px, 0px 0,;
+      background-position: 19px 55px, 0 0,;
       background-size: 202px, 238px 276px;
       background-repeat: no-repeat;
     }
+
     &__number {
       position: absolute;
       top: 105px;
@@ -40,24 +42,27 @@
       font-weight: 700;
       color: #d22856;
     }
+
     &__body {
       text-align: left;
       padding-top: 38px;
-
     }
+
     &__header {
       margin-bottom: 10px;
       margin-right: 120px;
       font-size: 30px;
       line-height: 36px;
       font-weight: 700;
-      color: #000;
+      color: #000000;
     }
+
     &__text {
       margin-bottom: 10px;
       font-size: 14px;
       line-height: 24px;
     }
+
     &__link {
       font-size: 14px;
       line-height: 24px;
@@ -66,11 +71,13 @@
     }
   }
 }
+
 @media (min-width: $desktop) {
   .research {
     padding-top: 0;
     background-color: #f2f2f2;
   }
+
   .research__container {
     margin-left: auto;
     margin-right: auto;
@@ -81,30 +88,36 @@
     width: 1200px;
     max-width: none;
   }
+
   .research__img {
     margin-right: 67px;
     width: 298px;
     height: 345px;
-    background-position: 22px 68px, 0px 0,;
+    background-position: 22px 68px, 0 0,;
     background-size: 253px, 298px 345px;
   }
+
   .research__number {
     top: 130px;
     left: 80px;
     font-size: 120px;
   }
+
   .research__body {
     padding-top: 90px;
   }
+
   .research__header {
     margin-bottom: 22px;
     font-size: 30px;
   }
+
   .research__text {
     margin-bottom: 32px;
     font-size: 18px;
     line-height: 30px;
   }
+
   .research__link {
     font-size: 18px;
     line-height: 30px;

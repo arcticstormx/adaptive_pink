@@ -43,7 +43,7 @@
 
 .header__logo-self:active {
   opacity: 0.3;
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .header__logo-self--mobile {
@@ -70,6 +70,7 @@
   .header {
     margin-bottom: -110px;
   }
+
   .header__main {
     height: 110px;
   }
@@ -105,24 +106,30 @@
     padding-right: 130px;
     max-width: 1200px;
   }
+
   .header__main {
     display: flex;
     padding: 0;
     background-color: transparent;
   }
+
   .header__burger {
     display: none;
   }
+
   .header__logo {
     left: 0;
   }
+
   .header__logo-self--tablet {
     display: none;
   }
+
   .header__logo-self--desktop {
     display: block;
-    fill: #fff;
+    fill: #ffffff;
   }
+
   .header__main-nav {
     margin-left: auto;
     display: flex;
