@@ -1,0 +1,21 @@
+{
+  "name": "Pink",
+  "short_name": "Pink",
+  "description": "Развлекательное мобильное приложение",
+  "lang": "ru",
+  "orientation": "any",
+  "start_url": "source/index.html",
+  "display": "browser",
+  "background_color": "#1d2631",
+  "theme_color": "#1d2631",
+  "icons": [
+    {
+      "src": "source/img/favicon/favicon.ico",
+      "sizes": "16x16 32x32 64x64 128x128"
+    }, {
+      "src": "source/img/favicon/logo.svg",
+      "sizes": "any",
+      "type": "image/svg"
+    }
+  ]
+}
