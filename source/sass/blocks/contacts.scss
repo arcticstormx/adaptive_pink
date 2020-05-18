@@ -67,7 +67,7 @@
 }
 
 .contacts__map::before {
-  z-index: 10;
+  z-index: 50;
   content: "";
   position: absolute;
   top: 0;
@@ -104,6 +104,13 @@
   background-position: 0 0;
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.contacts__map iframe {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: $tablet) {
@@ -208,15 +215,14 @@
   }
 
   .contacts__map {
-    height: 522px;
+    height: 501px;
   }
 
   .contacts__map::before {
     top: 0;
-    left: -118px;
-    width: 1439px;
-    height: 123px;
-    background-size: 1439px 123px;
+    left: 0;
+    height: 104px;
+    background-size: 100% 104px;
   }
 
   .contacts__map::after {
