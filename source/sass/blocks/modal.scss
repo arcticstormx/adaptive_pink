@@ -1,5 +1,4 @@
 .modal {
-  display: none;
   z-index: 100;
 
   width: 100vw;
@@ -50,11 +49,16 @@
 }
 
 .modal--failure {
+  display: none;
   padding-bottom: 50px;
 }
 
 .modal--failure .modal__header {
   margin-bottom: 25px;
+}
+
+.modal--success {
+  display: none;
 }
 
 .modal--success .modal__header {

@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="js/script.js" as="script">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   </head>
   <body>
     <header class="header">
@@ -313,15 +318,5 @@
       </div>
     </footer>
   </body>
-  <script>
-    const main = document.querySelector(".header__main");
-    const burger = main.querySelector(".burger");
-    const menu = document.querySelector(".header__main-nav");
-
-    burger.addEventListener("click", (evt) => {
-      menu.classList.toggle("header__main-nav--show");
-      main.classList.toggle("header__main--open");
-      burger.classList.toggle("burger--open");
-    });
-  </script>
+  <script src="js/script.min.js"></script>
 </html>
