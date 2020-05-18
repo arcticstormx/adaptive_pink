@@ -27,15 +27,13 @@
 }
 
 @media (min-width: $tablet) {
-  .copyright {
-    &__text {
+    .copyright__text {
       margin-right: 15px;
     }
 
-    &__link {
+    .copyright__link {
       margin-top: 2px;
     }
-  }
 }
 
 @media (min-width: $desktop) {

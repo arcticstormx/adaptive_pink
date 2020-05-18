@@ -51,32 +51,32 @@
   .reviews {
     padding-top: 99px;
     padding-bottom: 20px;
+  }
 
-    &__container {
-      margin-right: auto;
-      margin-left: auto;
-      padding-left: 20px;
-      padding-right: 20px;
-      max-width: 890px;
-    }
+  .reviews__container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 890px;
+  }
 
-    &__item-header {
-      margin-bottom: 6px;
-      font-size: 20px;
-    }
+  .reviews__item-header {
+    margin-bottom: 6px;
+    font-size: 20px;
+  }
 
-    &__item-subheader {
-      display: block;
-      font-size: 14px;
-      line-height: 30px;
-      color: #283645;
-    }
+  .reviews__item-subheader {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+  }
 
-    &__item-text {
-      order: -1;
-      margin-bottom: 40px;
-      font-size: 18px;
-    }
+  .reviews__item-text {
+    order: -1;
+    margin-bottom: 40px;
+    font-size: 18px;
   }
 }
 

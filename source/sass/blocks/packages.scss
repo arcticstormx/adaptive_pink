@@ -34,21 +34,21 @@
   .packages {
     padding-top: 88px;
     padding-bottom: 70px;
+  }
 
-    &__container {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
+  .packages__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    &__slider {
-      margin-bottom: 0;
-      height: auto;
-      justify-content: center;
-    }
+  .packages__slider {
+    margin-bottom: 0;
+    height: auto;
+    justify-content: center;
+  }
 
-    &__controls {
-      display: none;
-    }
+  .packages__controls {
+    display: none;
   }
 }
 

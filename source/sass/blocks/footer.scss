@@ -36,31 +36,31 @@
   .footer {
     background-color: #ffffff;
     padding-bottom: 37px;
+  }
 
-    &--index {
-      display: flex;
-    }
+  .footer--index {
+    display: flex;
+  }
 
-    &__container {
-      display: flex;
-      flex-direction: row;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    &__logo {
-      margin-top: -5px;
-      margin-right: 77px;
-      margin-bottom: 0;
-    }
+  .footer__logo {
+    margin-top: -5px;
+    margin-right: 77px;
+    margin-bottom: 0;
+  }
 
 
-    &__social {
-      margin-right: 93px;
-      margin-bottom: 0;
-    }
+  .footer__social {
+    margin-right: 93px;
+    margin-bottom: 0;
   }
 }
 

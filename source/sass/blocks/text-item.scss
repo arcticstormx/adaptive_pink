@@ -54,18 +54,18 @@
   .text-item {
     flex-direction: row;
     margin-bottom: 52px;
+  }
 
-    &__label {
-      margin-bottom: 0;
-      margin-right: 19px;
-      padding-top: 16.5px;
-      padding-bottom: 16.5px;
-      padding-left: 0;
-    }
+  .text-item__label {
+    margin-bottom: 0;
+    margin-right: 19px;
+    padding-top: 16.5px;
+    padding-bottom: 16.5px;
+    padding-left: 0;
+  }
 
-    &__input {
-      padding-left: 18px;
-      flex-grow: 1;
-    }
+  .text-item__input {
+    padding-left: 18px;
+    flex-grow: 1;
   }
 }
