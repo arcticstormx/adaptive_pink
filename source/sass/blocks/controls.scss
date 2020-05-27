@@ -13,7 +13,7 @@
   border-radius: 50%;
 }
 
-.controls__toggle--current {
+.controls__toggle--active {
   margin-right: 16px;
   margin-bottom: 0;
   width: 11px;
@@ -23,6 +23,6 @@
 }
 
 .controls__toggle:last-child,
-.controls__toggle--current:last-child {
+.controls__toggle--active:last-child {
   margin-right: 0;
 }

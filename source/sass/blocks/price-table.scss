@@ -11,6 +11,14 @@
   white-space: nowrap;
 }
 
+.price-table--left {
+  left: calc(50% + 280px);
+}
+
+.price-table--right {
+  left: calc(50% - 280px);
+}
+
 .price-table__row {
   background-color: #ffffff;
 }

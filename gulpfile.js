@@ -10,6 +10,7 @@ var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
+var babel = require("gulp-babel");
 var svgstore = require("gulp-svgstore");
 var del = require("del");
 var uglify = require("gulp-uglify");
@@ -37,8 +38,13 @@ gulp.task("html", function () {
 });
 gulp.task("js", function () {
   return gulp.src("source/js/*.js")
-    .pipe(uglify())
+    .pipe(babel({
+            presets: ["@babel/preset-env"]
+        }))
     .pipe(rename("script.min.js"))
+    .pipe(sourcemap.init())
+    .pipe(uglify())
+    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/js/"))
 });
 gulp.task("css", function () {
@@ -63,15 +69,15 @@ gulp.task("images", function () {
       imagemin.mozjpeg({quality: 75, progressive: true}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 });
 gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src("build/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("build/img"))
 });
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icons/*.svg")
+  return gulp.src("build/img/icons/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
